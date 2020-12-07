@@ -2,19 +2,20 @@ a {
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 10px;
-    box-shadow: var(--shadow-s);
+    box-shadow: var(--shadow-xs);
     transition: 300ms;
-}
-
-a:active {
-    box-shadow: none;
 }
 
 .primary {
     color: var(--neutral-900);
-    background-color: var(--accent-300);
+    background-color: var(--primary-300);
 }
 
 .primary:hover {
-    background-color: var(--accent-500);
+    background-color: var(--primary-400);
+    box-shadow: var(--shadow-s);
+}
+
+.primary:active {
+    box-shadow: none;
 }

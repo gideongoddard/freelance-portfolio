@@ -1,32 +1,4 @@
-.section {
-    padding: 20px calc(5% + 5vw) 40px calc(5% + 5vw);
-}
-
-.section h2 {
-    font-size: var(--type-l);
-    font-weight: 600;
-}
-
-.panels {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.panel {
-    width: 100px;
-    height: calc(30px + 4vw);
-    border-radius: 10px;
-    box-shadow: var(--shadow-xs);
-    margin-right: calc(10px + 2%);
-    flex-grow: 1;
-    background-color: var(--neutral-100);
-}
-
 /* Type scale */
-
-.type {
-    margin: 25px 0;
-}
 
 .xxl {
     font-size: var(--type-xxl);
@@ -62,16 +34,32 @@
     background-color: var(--primary-100);
 }
 
+.primary200 {
+    background-color: var(--primary-200);
+}
+
 .primary300 {
     background-color: var(--primary-300);
+}
+
+.primary400 {
+    background-color: var(--primary-400);
 }
 
 .primary500 {
     background-color: var(--primary-500);
 }
 
+.primary600 {
+    background-color: var(--primary-600);
+}
+
 .primary700 {
     background-color: var(--primary-700);
+}
+
+.primary800 {
+    background-color: var(--primary-800);
 }
 
 .primary900 {
@@ -82,16 +70,32 @@
     background-color: var(--accent-100);
 }
 
+.accent200 {
+    background-color: var(--accent-200);
+}
+
 .accent300 {
     background-color: var(--accent-300);
+}
+
+.accent400 {
+    background-color: var(--accent-400);
 }
 
 .accent500 {
     background-color: var(--accent-500);
 }
 
+.accent600 {
+    background-color: var(--accent-600);
+}
+
 .accent700 {
     background-color: var(--accent-700);
+}
+
+.accent800 {
+    background-color: var(--accent-800);
 }
 
 .accent900 {

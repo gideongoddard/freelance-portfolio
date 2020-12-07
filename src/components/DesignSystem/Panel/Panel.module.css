@@ -1,0 +1,9 @@
+.panel {
+    width: 100px;
+    height: calc(30px + 4vw);
+    border-radius: 10px;
+    box-shadow: var(--shadow-xs);
+    margin-right: calc(10px + 2%);
+    flex-grow: 1;
+    background-color: var(--neutral-100);
+}
