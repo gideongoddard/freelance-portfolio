@@ -18,41 +18,48 @@ export default function StyleGuide() {
           </section>
           <section className={DesignSystemStyles.section}>
             <h1>Colour palette</h1>
-            <p>The colour palette consists of a set of 5 shades of primary and accent colours along with 9 shades of a neutral colour.</p>
+            <p>The colour palette consists of a set of 5 shades of primary and accent colours along with 9 shades of a neutral colour. Each is on a scale that starts at 100 and ends at 900 with intermediate shades evenly distributed between those values - <em>e.g. primary-100, primary-300, primary-500, primary-700, primary-900</em></p>
             <hr />
             <h2>Primary</h2>
-            <div className={DesignSystemStyles.colorClass}>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.primary100}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.primary300}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.primary500}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.primary700}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.primary900}`}></div>
+            <div className={DesignSystemStyles.panels}>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.primary100}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.primary300}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.primary500}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.primary700}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.primary900}`}></div>
             </div>
             <h2>Accent</h2>
-            <div className={DesignSystemStyles.colorClass}>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.accent100}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.accent300}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.accent500}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.accent700}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.accent900}`}></div>
+            <div className={DesignSystemStyles.panels}>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.accent100}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.accent300}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.accent500}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.accent700}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.accent900}`}></div>
             </div>
             <h2>Neutral</h2>
-            <div className={DesignSystemStyles.colorClass}>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral100}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral200}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral300}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral400}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral500}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral600}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral700}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral800}`}></div>
-              <div className={`${DesignSystemStyles.color} ${DesignSystemStyles.neutral900}`}></div>
+            <div className={DesignSystemStyles.panels}>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral100}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral200}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral300}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral400}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral500}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral600}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral700}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral800}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.neutral900}`}></div>
             </div>
           </section>
           <section className={DesignSystemStyles.section}>
             <h1>Shadows</h1>
-            <p><em>Description to be added...</em></p>
+            <p>There are 5 box shadows to represent different levels of elevation from the page.</p>
             <hr />
+            <div className={DesignSystemStyles.panels} style={{marginTop: 40, justifyContent: "space-between", backgroundColor: "var(--neutral-200)", padding: "5%", borderRadius: 10}}>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.xSmallShadow}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.smallShadow}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.mediumShadow}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.largeShadow}`}></div>
+              <div className={`${DesignSystemStyles.panel} ${DesignSystemStyles.xLargeShadow}`}></div>
+            </div>
           </section>
         </main>
     )
