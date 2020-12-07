@@ -2,7 +2,7 @@ a {
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 10px;
-    box-shadow: 0 3px 8px hsla(0, 0%, 60%, .6);
+    box-shadow: var(--shadow-s);
     transition: 300ms;
 }
 
@@ -11,10 +11,10 @@ a:active {
 }
 
 .primary {
-    color: inherit;
-    background-color: hsl(110, 55%, 70%);
+    color: var(--neutral-900);
+    background-color: var(--accent-300);
 }
 
 .primary:hover {
-    background-color: hsl(110, 50%, 60%);
+    background-color: var(--accent-500);
 }

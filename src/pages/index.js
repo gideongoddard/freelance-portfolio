@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <Layout>
       <section className={HomeStyles.heroSection}>
-        <h2>Design. Build. Improve.</h2>
-        <h1>I create beautiful websites your users will love</h1>
-        <Button type="primary" to="/">Make it happen</Button>
+        <h2>Build in progress...</h2>
+        <h1>Why not check out the site's design system?</h1>
+        <Button type="primary" to="/design-system">Take a look</Button>
       </section>
     </Layout>
   )

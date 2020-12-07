@@ -14,14 +14,14 @@
     --primary-300: hsl(200, 55%, 70%);
     --primary-500: hsl(200, 30%, 50%);
     --primary-700: hsl(200, 55%, 30%);
-    --primary-900: hsl(200, 80%, 10%);
+    --primary-900: hsl(200, 80%, 15%);
 
     /* Accent */
     --accent-100: hsl(170, 80%, 90%);
     --accent-300: hsl(170, 55%, 70%);
     --accent-500: hsl(170, 30%, 50%);
     --accent-700: hsl(170, 55%, 30%);
-    --accent-900: hsl(170, 80%, 10%);
+    --accent-900: hsl(170, 80%, 15%);
 
     /* Neutral */
     --neutral-100: hsl(200, 20%, 100%);
