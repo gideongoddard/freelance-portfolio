@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <Title
-        title="Check out the design system in the meantime"
+        title="Check out the design system (also in progress)"
         subtitle="Build in progress..."
         button={true}
         buttonType="accent"
