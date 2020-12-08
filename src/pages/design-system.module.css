@@ -52,18 +52,22 @@
 
 .primary600 {
     background-color: var(--primary-600);
+    color: var(--neutral-100);
 }
 
 .primary700 {
     background-color: var(--primary-700);
+    color: var(--neutral-100);
 }
 
 .primary800 {
     background-color: var(--primary-800);
+    color: var(--neutral-100);
 }
 
 .primary900 {
     background-color: var(--primary-900);
+    color: var(--neutral-100);
 }
 
 .accent100 {
@@ -158,4 +162,12 @@
 
 .xLargeShadow {
     box-shadow: var(--shadow-xl);
+}
+
+/* Buttons */
+@media only screen and (min-width: 700px) {
+    .buttonContainer {
+        display: flex;
+        justify-content: space-around;
+    }
 }

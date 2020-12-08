@@ -6,4 +6,7 @@
     margin-right: calc(10px + 2%);
     flex-grow: 1;
     background-color: var(--neutral-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -8,8 +8,8 @@ export default function Home() {
     <Layout>
       <section className={HomeStyles.heroSection}>
         <h2>Build in progress...</h2>
-        <h1>Why not check out the site's design system?</h1>
-        <Button type="primary" to="/design-system">Take a look</Button>
+        <h1>Check out the evolving design system in the meantime</h1>
+        <Button type="accent" to="/design-system">Take a sneak peak</Button>
       </section>
     </Layout>
   )

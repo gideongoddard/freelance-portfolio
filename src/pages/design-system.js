@@ -4,6 +4,7 @@ import Panels from "../components/DesignSystem/Panels/Panels"
 import Panel from "../components/DesignSystem/Panel/Panel"
 import DesignSystemStyles from "./design-system.module.css"
 import TypeScale from "../components/DesignSystem/TypeScale/TypeScale"
+import Button from "../components/Button/Button"
 
 export default function StyleGuide() {
     return (
@@ -72,6 +73,16 @@ export default function StyleGuide() {
               <Panel addedClass={DesignSystemStyles.largeShadow} />
               <Panel addedClass={DesignSystemStyles.xLargeShadow} />
             </Panels>
+          </DesignSystemSection>
+          <DesignSystemSection
+            heading="Buttons"
+            description="There are 3 core button styles: Primary is the default; Accent is for buttons that are key CTAs; Neutral is for buttons that are to be de-emphasized."
+          >
+            <div className={DesignSystemStyles.buttonContainer}>
+              <Button type="primary" to="#">Primary button</Button>
+              <Button type="accent" to="#">Accent button</Button>
+              <Button type="neutral" to="#">Neutral button</Button>
+            </div>
           </DesignSystemSection>
         </main>
     )

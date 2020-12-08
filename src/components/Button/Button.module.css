@@ -1,13 +1,17 @@
-a {
+.primary, .accent, .neutral {
+    display: block;
+    width: fit-content;
+    font-size: var(--type-xs);
     text-decoration: none;
     padding: 15px 30px;
+    margin: 20px 0;
     border-radius: 10px;
     box-shadow: var(--shadow-xs);
     transition: 300ms;
 }
 
 .primary {
-    color: var(--neutral-900);
+    color: var(--primary-900);
     background-color: var(--primary-300);
 }
 
@@ -17,5 +21,33 @@ a {
 }
 
 .primary:active {
+    box-shadow: none;
+}
+
+.accent {
+    color: var(--accent-900);
+    background-color: var(--accent-300);
+}
+
+.accent:hover {
+    background-color: var(--accent-400);
+    box-shadow: var(--shadow-s);
+}
+
+.accent:active {
+    box-shadow: none;
+}
+
+.neutral {
+    color: var(--neutral-900);
+    background-color: var(--neutral-300);
+}
+
+.neutral:hover {
+    background-color: var(--neutral-400);
+    box-shadow: var(--shadow-s);
+}
+
+.neutral:active {
     box-shadow: none;
 }

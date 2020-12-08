@@ -6,3 +6,7 @@
     font-size: var(--type-l);
     font-weight: 600;
 }
+
+.section hr {
+    margin-bottom: 25px;
+}
