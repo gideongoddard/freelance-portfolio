@@ -5,10 +5,15 @@ import Panel from "../components/DesignSystem/Panel/Panel"
 import DesignSystemStyles from "./design-system.module.css"
 import TypeScale from "../components/DesignSystem/TypeScale/TypeScale"
 import Button from "../components/Button/Button"
+import Title from "../components/Title/Title"
 
 export default function StyleGuide() {
     return (
         <main>
+          <Title
+            title="Website design system"
+            subtitle={`"Systematise everything"`}
+          />
           <DesignSystemSection
             heading="Type scale"
             description="The type scale consists of 7 font sizes, each of which is a calculation combining 'px' and 'vw' units. Larger sizes scale up and down more than smaller sizes."
@@ -25,7 +30,7 @@ export default function StyleGuide() {
             heading="Colour palette"
             description="The colour palette consists of a set of shades of primary, accent & neutral colours. Each is on a scale that starts at 100 and ends at 900 with intermediate shades evenly distributed between those values."
           >
-            <h2>Primary</h2>
+            <h3>Primary</h3>
             <Panels>
               <Panel addedClass={DesignSystemStyles.primary100} />
               <Panel addedClass={DesignSystemStyles.primary200} />
@@ -37,7 +42,7 @@ export default function StyleGuide() {
               <Panel addedClass={DesignSystemStyles.primary800} />
               <Panel addedClass={DesignSystemStyles.primary900} />
             </Panels>
-            <h2>Accent</h2>
+            <h3>Accent</h3>
             <Panels>
               <Panel addedClass={DesignSystemStyles.accent100} />
               <Panel addedClass={DesignSystemStyles.accent200} />
@@ -49,7 +54,7 @@ export default function StyleGuide() {
               <Panel addedClass={DesignSystemStyles.accent800} />
               <Panel addedClass={DesignSystemStyles.accent900} />
             </Panels>              
-            <h2>Neutral</h2>
+            <h3>Neutral</h3>
             <Panels>
               <Panel addedClass={DesignSystemStyles.neutral100} />
               <Panel addedClass={DesignSystemStyles.neutral200} />

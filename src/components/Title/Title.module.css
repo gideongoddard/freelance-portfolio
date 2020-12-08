@@ -1,0 +1,23 @@
+.section {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: calc(5em + 2vw) 0;
+}
+
+.section h1 {
+    font-size: var(--type-xxl);
+    margin-top: 10px;
+    line-height: 1.25em;
+}
+
+.section h2 {
+    font-size: var(--type-m);
+    font-weight: 600;
+}
