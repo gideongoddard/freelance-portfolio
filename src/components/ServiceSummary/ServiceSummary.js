@@ -18,7 +18,7 @@ export default function ServiceSummary() {
                     <Service
                         item="01"
                         heading="Digital Strategy"
-                        description="No project should start without an understanding of what it's supposed to achieve. We'll work together to ensure your digital activity is aligned with your business goals."
+                        description="No project should start without a clear understanding of what it's supposed to achieve. We'll work together to ensure your digital activity is perfectly aligned with your business goals."
                     />
                     <Service
                         item="02"
