@@ -2,6 +2,7 @@
     display: block;
     width: fit-content;
     font-size: var(--type-xs);
+    color: white;
     text-decoration: none;
     padding: 15px 30px;
     margin: 20px 0;
@@ -11,43 +12,37 @@
 }
 
 .primary {
-    color: var(--primary-900);
-    background-color: var(--primary-300);
+    background-color: var(--primary-500);
 }
 
 .primary:hover {
     background-color: var(--primary-400);
     box-shadow: var(--shadow-s);
-}
-
-.primary:active {
-    box-shadow: none;
+    transform: translateY(-1px);
 }
 
 .accent {
-    color: var(--accent-900);
-    background-color: var(--accent-300);
+    background-color: var(--accent-500);
 }
 
 .accent:hover {
     background-color: var(--accent-400);
     box-shadow: var(--shadow-s);
-}
-
-.accent:active {
-    box-shadow: none;
+    transform: translateY(-1px);
 }
 
 .neutral {
-    color: var(--neutral-900);
-    background-color: var(--neutral-300);
+    background-color: var(--neutral-500);
 }
 
 .neutral:hover {
     background-color: var(--neutral-400);
     box-shadow: var(--shadow-s);
+    transform: translateY(-1px);
 }
 
-.neutral:active {
+.primary:active, .accent:active, .neutral:active {
+    transition: 5ms;
     box-shadow: none;
+    transform: translateY(1px);
 }

@@ -71,7 +71,7 @@ export default function StyleGuide() {
             heading="Shadows"
             description="There are 5 box shadows to represent different levels of elevation from the page."
           >
-            <Panels style={{marginTop: 40, justifyContent: "space-between", backgroundColor: "var(--neutral-200)", padding: "5%", borderRadius: 10}}>
+            <Panels style={{marginTop: 40, justifyContent: "space-between", backgroundColor: "var(--neutral-100)", padding: "5%", borderRadius: 10}}>
               <Panel addedClass={DesignSystemStyles.xSmallShadow} />
               <Panel addedClass={DesignSystemStyles.smallShadow} />
               <Panel addedClass={DesignSystemStyles.mediumShadow} />
