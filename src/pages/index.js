@@ -7,12 +7,12 @@ export default function Home() {
   return (
     <Layout>
       <Title
-        title="Check out the design system (also in progress)"
-        subtitle="Build in progress..."
+        title="Outstanding websites that deliver results"
+        subtitle="I help your business achieve its online goals"
         button={true}
         buttonType="accent"
-        buttonTo="/design-system"
-        buttonText="Take a sneak peak"
+        buttonTo="/#contact"
+        buttonText="Let's get started"
       />
     </Layout>
   )
