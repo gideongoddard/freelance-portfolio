@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
+import ServiceSummary from "../components/ServiceSummary/ServiceSummary"
 // import HomeStyles from "./index.module.css"
 import Title from "../components/Title/Title"
 
@@ -14,6 +15,7 @@ export default function Home() {
         buttonTo="/#contact"
         buttonText="Let's get started"
       />
+      <ServiceSummary />
     </Layout>
   )
 }
