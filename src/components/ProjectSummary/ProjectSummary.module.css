@@ -1,0 +1,48 @@
+.section h2 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.section p {
+    text-align: center;
+    margin: 12px 0 32px 0;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-gap: 24px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.projectsContainer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project {
+    margin: 8px 0 24px 0;
+    border-radius: 10px;
+    background-color: var(--primary-100);
+    padding: 16px;
+    box-shadow: var(--shadow-m);
+    transition: all 300ms;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background-color: var(--primary-100);
+    box-shadow: var(--shadow-l);
+}
+
+.project h3 {
+    font-size: var(--type-s);
+    margin: 8px 0 16px 0;
+}
+
+@media only screen and (min-width: 960px) {
+    .projectsContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 48px;
+    }
+}
