@@ -20,4 +20,5 @@
 .section h2 {
     font-size: var(--type-s);
     font-weight: 500;
+    width: 90%;
 }
