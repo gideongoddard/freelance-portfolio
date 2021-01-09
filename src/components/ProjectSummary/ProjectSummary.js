@@ -4,12 +4,14 @@ import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Project = props => (
-    <a href={props.href} target="_blank" rel="noopener noreferrer">
-        <div className={PSStyles.project}>
+    <div className={PSStyles.project}>
+        <a href={props.href} target="_blank" rel="noopener noreferrer">
+            <Img fluid={props.imgSrc} alt={props.imgAlt} className={PSStyles.projectImg} />
+        </a>
+        <a href={props.href} target="_blank" rel="noopener noreferrer">
             <h3>{props.name}</h3>
-            <Img fluid={props.imgSrc} alt={props.imgAlt} />
-        </div>
-    </a>
+        </a>
+    </div>
 )
 
 export default function ProjectSummary() {
@@ -48,7 +50,7 @@ export default function ProjectSummary() {
                         render={data => (
                             <>
                             <Project 
-                                name="Kibworth Osteopaths"
+                                name="Kibworth Osteopaths & Pilates"
                                 href="https://kibworthosteopaths.co.uk"
                                 imgSrc={data.kibworthOsteopaths.childImageSharp.fluid}
                                 imgAlt="Kibworth Osteopaths & Pilates website"
