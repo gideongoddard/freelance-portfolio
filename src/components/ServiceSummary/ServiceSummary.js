@@ -13,7 +13,7 @@ export default function ServiceSummary() {
     return (
         <section className={SSStyles.section}>
             <div className="container">
-                <h2>What goes into making outstanding websites</h2>
+                <h2>What goes into creating outstanding websites</h2>
                 <div className={SSStyles.serviceContainer}>
                     <Service
                         item="01"

@@ -19,7 +19,7 @@ export default function ProjectSummary() {
         <section className={PSStyles.section}>
             <div className="container">
                 <h2>Recent Work</h2>
-                <p>Take a look at some of my recent projects</p>
+                <p>Take a look at some of my latest projects</p>
                 <div className={PSStyles.projectsContainer}>
                     <StaticQuery
                         query={graphql`
