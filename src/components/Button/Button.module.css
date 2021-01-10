@@ -1,7 +1,7 @@
 .primary, .accent, .neutral {
     display: block;
     width: fit-content;
-    font-size: var(--type-xxs);
+    font-size: var(--type-xs);
     color: white;
     text-decoration: none;
     padding: 15px 30px;

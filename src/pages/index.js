@@ -1,4 +1,5 @@
 import React from "react"
+import Gideon from "../components/Gideon/Gideon"
 import Layout from "../components/Layout/Layout"
 import ProjectSummary from "../components/ProjectSummary/ProjectSummary"
 import ServiceSummary from "../components/ServiceSummary/ServiceSummary"
@@ -18,6 +19,7 @@ export default function Home() {
       />
       <ServiceSummary />
       <ProjectSummary />
+      <Gideon />
     </Layout>
   )
 }
