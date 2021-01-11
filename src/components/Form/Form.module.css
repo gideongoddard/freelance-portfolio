@@ -44,6 +44,7 @@
 .form input[type="submit"]:hover {
     background-color: var(--primary-400);
     transform: translateY(-1px);
+    box-shadow: var(--shadow-s);
 }
 
 input[type="submit"] {
