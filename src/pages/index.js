@@ -1,4 +1,5 @@
 import React from "react"
+import Form from "../components/Form/Form"
 import Gideon from "../components/Gideon/Gideon"
 import Layout from "../components/Layout/Layout"
 import ProjectSummary from "../components/ProjectSummary/ProjectSummary"
@@ -25,6 +26,7 @@ export default function Home() {
         quote="Gideon is amazing! His services and knowledge have helped my business grow really well. Gideon is patient, kind, helpful and incredibly talented. I cannot recommend him highly enough!"
         client="Emily Coombes, Kibworth Osteopaths & Pilates"
       />
+      <Form />
     </Layout>
   )
 }
