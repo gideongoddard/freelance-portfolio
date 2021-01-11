@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Form from "../components/Form/Form"
 import Gideon from "../components/Gideon/Gideon"
 import Layout from "../components/Layout/Layout"
