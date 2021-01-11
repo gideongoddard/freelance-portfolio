@@ -89,3 +89,12 @@ h6 {
 p {
     font-size: var(--type-xxs);
 }
+
+section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+.section h2 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.section p {
+    text-align: center;
+    margin: 12px 0 32px 0;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-gap: 24px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project a:hover {
+    text-decoration: underline;
+    color: var(--accent-500);
+}
+
+.project {
+    margin: 8px 0 16px 0;
+}
+
+.project h3 {
+    font-size: var(--type-s);
+    margin: 16px 0;
+}
+
+@media only screen and (min-width: 960px) {
+    .projectsContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 48px;
+    }
+}

@@ -1,0 +1,55 @@
+.section {
+    background-color: var(--neutral-100);
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.serviceContainer {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 8px 0 24px 0;
+}
+
+.item {
+    background-color: var(--primary-100);
+    color: var(--primary-900);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h3 {
+    font-size: var(--type-s);
+    margin: 16px 0;
+}
+
+.service p {
+    margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .serviceContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px 48px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .serviceContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

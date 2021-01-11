@@ -6,15 +6,15 @@ export default function Title(props) {
     return (
         <section className={TitleStyles.section}>
             <div>
+                <h1>{props.title}</h1>
                 {
                     props.subtitle ? (
                         <h2>{props.subtitle}</h2>
                     ) : <></>
                 }
-                <h1>{props.title}</h1>
                 {
                     props.button ? (
-                        <Button type={props.buttonType} to={props.buttonTo}>{props.buttonText}</Button>
+                        <Button type={props.buttonType} style={props.buttonStyle} to={props.buttonTo}>{props.buttonText}</Button>
                     ) : <></>
                 }
             </div>
