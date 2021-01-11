@@ -14,7 +14,7 @@ export default function Title(props) {
                 }
                 {
                     props.button ? (
-                        <Button type={props.buttonType} to={props.buttonTo}>{props.buttonText}</Button>
+                        <Button type={props.buttonType} style={props.buttonStyle} to={props.buttonTo}>{props.buttonText}</Button>
                     ) : <></>
                 }
             </div>

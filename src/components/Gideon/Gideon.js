@@ -10,7 +10,7 @@ export default function Gideon() {
                     <div className={GideonStyles.contentBox}>
                         <h3>Hi, I'm Gideon.</h3>
                         <p>I help businesses succeed online by creating websites that convert visits into enquiries and sales.</p>
-                        <Button type="primary" to="/#contact">Let's talk</Button>
+                        <Button type="external" style="primary" to="/#contact">Let's talk</Button>
                     </div>
                 </div>
             </div>
