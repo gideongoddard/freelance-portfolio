@@ -45,3 +45,7 @@
     background-color: var(--primary-400);
     transform: translateY(-1px);
 }
+
+input[type="submit"] {
+    -webkit-appearance: none;
+}
