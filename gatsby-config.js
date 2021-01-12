@@ -13,6 +13,7 @@ module.exports = {
         trackingId: "UA-121836060-2",
         head: true,
         anonymize: true,
+        cookieDomain: "SameSite=None;Secure"
       },
     },
     {
