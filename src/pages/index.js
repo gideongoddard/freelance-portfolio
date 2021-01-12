@@ -6,7 +6,6 @@ import Layout from "../components/Layout/Layout"
 import ProjectSummary from "../components/ProjectSummary/ProjectSummary"
 import ServiceSummary from "../components/ServiceSummary/ServiceSummary"
 import Testimonial from "../components/Testimonial/Testimonial"
-// import HomeStyles from "./index.module.css"
 import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
 

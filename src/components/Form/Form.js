@@ -1,5 +1,6 @@
 import React from "react"
 import FormStyles from "./Form.module.css"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 export default function Form() {
     return (
@@ -16,7 +17,13 @@ export default function Form() {
                     <input id="email" name="email" type="email" placeholder="Enter your email address..." maxLength="50" required />
                     <label htmlFor="message">Message</label>
                     <textarea id="message" name="message" rows="10" placeholder="Enter your message..." maxLength="1000" required></textarea>
-                    <input id="submit" type="submit" value="Send message" /> 
+                    <input id="submit" type="submit" value="Send message" onClick={e => {
+                        e.preventDefault()
+                        trackCustomEvent({
+                            category: "form",
+                            action: "submit",
+                            label: "contact",
+                        })}} /> 
                 </form>
             </div>
         </section>
