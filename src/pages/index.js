@@ -38,7 +38,7 @@ export default function Home() {
         subtitle="I help your business achieve its online goals"
         button={true}
         buttonType="external"
-        buttonStyle="accent"
+        buttonColour="accent"
         buttonTo="/#contact"
         buttonText="Let's get started"
       />

@@ -7,9 +7,9 @@ export default function Button(props) {
         <>
         {
             props.type === "external" ? (
-                <a className={ButtonStyles[props.style]} href={props.to}>{props.children}</a>
+                <a className={ButtonStyles[props.colour]} href={props.to}>{props.children}</a>
             ) : (
-                <Link className={ButtonStyles[props.style]} to={props.to}>{props.children}</Link>
+                <Link className={ButtonStyles[props.colour]} to={props.to}>{props.children}</Link>
             )
         }
         </>
