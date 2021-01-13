@@ -18,7 +18,6 @@ export default function Form() {
                     <label htmlFor="message">Message</label>
                     <textarea id="message" name="message" rows="10" placeholder="Enter your message..." maxLength="1000" required></textarea>
                     <input id="submit" type="submit" value="Send message" onClick={e => {
-                        e.preventDefault()
                         trackCustomEvent({
                             category: "form",
                             action: "submit",
