@@ -12,11 +12,11 @@
 }
 
 .primary {
-    background-color: var(--primary-500);
+    background-color: var(--primary-600);
 }
 
 .primary:hover {
-    background-color: var(--primary-400);
+    background-color: var(--primary-500);
     box-shadow: var(--shadow-s);
     transform: translateY(-1px);
 }
