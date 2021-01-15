@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+}
+
+.nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 24px;
+    font-size: var(--type-xs);
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav a:hover {
+    color: var(--primary-500);
+}

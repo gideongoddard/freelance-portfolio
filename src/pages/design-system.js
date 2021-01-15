@@ -6,10 +6,11 @@ import DesignSystemStyles from "./design-system.module.css"
 import TypeScale from "../components/DesignSystem/TypeScale/TypeScale"
 import Button from "../components/Button/Button"
 import Title from "../components/Title/Title"
+import Layout from "../components/Layout/Layout"
 
 export default function StyleGuide() {
     return (
-        <main>
+        <Layout>
           <Title
             title="Website design system"
             subtitle={`"Systematise everything"`}
@@ -84,11 +85,11 @@ export default function StyleGuide() {
             description="There are 3 core button styles: Primary is the default; Accent is for buttons that are key CTAs; Neutral is for buttons that are to be de-emphasized."
           >
             <div className={DesignSystemStyles.buttonContainer}>
-              <Button type="primary" to="#">Primary button</Button>
-              <Button type="accent" to="#">Accent button</Button>
-              <Button type="neutral" to="#">Neutral button</Button>
+              <Button colour="primary" to="#">Primary button</Button>
+              <Button colour="accent" to="#">Accent button</Button>
+              <Button colour="neutral" to="#">Neutral button</Button>
             </div>
           </DesignSystemSection>
-        </main>
+        </Layout>
     )
   }
