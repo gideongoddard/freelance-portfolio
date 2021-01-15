@@ -18,6 +18,7 @@
 
 .form label {
     padding-left: 4px;
+    font-size: var(--type-xs);
 }
 
 .form input[type="text"], .form input[type="email"], .form textarea {

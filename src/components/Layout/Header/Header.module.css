@@ -1,10 +1,11 @@
 .header {
     width: 100%;
+    padding: 8px;
 }
 
 .nav {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: flex-end;
@@ -12,7 +13,8 @@
 
 .nav a {
     display: inline-block;
-    padding: 24px;
+    padding: 16px;
+    margin: 0 4px;
     font-size: var(--type-xs);
     text-decoration: none;
     color: inherit;

@@ -2,6 +2,8 @@ import React from "react"
 import ServicesStyles from "./services.module.css"
 import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
+import Gideon from "../components/Gideon/Gideon"
+import Button from "../components/Button/Button"
 
 const Service = props => (
     <div className={ServicesStyles.service}>
@@ -43,6 +45,10 @@ export default function Services() {
                     <p>You'll also get peace of mind in knowing that your site is being actively monitored for reliability, security and software updates - let me worry about that stuff so you don't have to!</p>
                 </Service>
             </section>
+            <Gideon>
+                <p>My background of over a decade of working on web projects for growing small businesses and some of the world's biggest brands - plus much in between - gives me the expertise to not only create you a website, but to make sure we create you the <em>right</em> website to deliver results for your business.</p>
+                <Button colour="primary" type="internal" to="/hire-me">Let's get started</Button>
+            </Gideon>
         </Layout>
     )
 }

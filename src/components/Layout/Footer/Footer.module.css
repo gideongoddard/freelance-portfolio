@@ -10,6 +10,10 @@
     border-top: 1px solid var(--neutral-200);
 }
 
+.footerBottom p {
+    font-size: var(--type-xxs);
+}
+
 @media only screen and (min-width: 600px) {
     .footerBottom {
         display: flex;

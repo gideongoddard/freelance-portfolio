@@ -49,7 +49,7 @@ export default function ProjectSummary() {
                         `}
                         render={data => (
                             <>
-                            <Project 
+                            <Project
                                 name="Kibworth Osteopaths & Pilates"
                                 href="https://kibworthosteopaths.co.uk"
                                 imgSrc={data.kibworthOsteopaths.childImageSharp.fluid}

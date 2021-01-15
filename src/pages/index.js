@@ -7,6 +7,7 @@ import ProjectSummary from "../components/ProjectSummary/ProjectSummary"
 import ServiceSummary from "../components/ServiceSummary/ServiceSummary"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Title from "../components/Title/Title"
+import Button from "../components/Button/Button"
 import MetaImage from "../images/meta-image.png"
 
 export default function Home() {
@@ -36,14 +37,18 @@ export default function Home() {
         title="Outstanding websites that deliver results"
         subtitle="I help your business achieve its online goals"
         button={true}
-        buttonType="external"
+        buttonType="internal"
         buttonColour="accent"
-        buttonTo="/#contact"
+        buttonTo="/hire-me"
         buttonText="Let's get started"
       />
       <ServiceSummary />
       <ProjectSummary />
-      <Gideon />
+      <Gideon>
+        <h3>Hi, I'm Gideon.</h3>
+        <p>I help businesses succeed online by creating websites that convert visits into enquiries and sales.</p>
+        <Button type="internal" colour="primary" to="/hire-me">Let's talk</Button>
+      </Gideon>
       <Testimonial
         quote="Gideon is amazing! His services and knowledge have helped my business grow really well. Gideon is patient, kind, helpful and incredibly talented. I cannot recommend him highly enough!"
         client="Emily Coombes, Kibworth Osteopaths & Pilates"
