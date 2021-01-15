@@ -13,11 +13,12 @@
 
 .section h1 {
     font-size: var(--type-xxl);
-    margin-bottom: 20px;
+    margin: 24px 0;
     line-height: 1.25em;
 }
 
 .section h2 {
+    margin: 24px 0;
     font-size: var(--type-s);
     font-weight: 500;
     width: 90%;

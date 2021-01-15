@@ -86,8 +86,9 @@ h6 {
     font-weight: 500;
 }
 
-p {
+p, li {
     font-size: var(--type-xxs);
+    line-height: 1.5;
 }
 
 section {
