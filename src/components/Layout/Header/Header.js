@@ -10,7 +10,7 @@ export default function Header() {
                 <Link activeStyle={{color: "var(--accent-500)"}} to="/services">Services</Link>
                 <Link activeStyle={{color: "var(--accent-500)"}} to="/projects">Projects</Link>
                 <Link activeStyle={{color: "var(--accent-500)"}} to="/about">About</Link>
-                <Link className={HeaderStyles.btnLink} to="/hire-me">Hire me</Link>
+                <Link activeStyle={{color: "var(--accent-500)"}} to="/hire-me">Hire me</Link>
             </nav>
         </header>
     )
