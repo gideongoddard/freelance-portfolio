@@ -5,7 +5,7 @@
 
 .nav {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: flex-end;
@@ -14,10 +14,11 @@
 .nav a {
     display: inline-block;
     padding: 16px;
-    margin: 0 4px;
+    margin: 0 1.5%;
     font-size: var(--type-xs);
     text-decoration: none;
     color: inherit;
+    white-space: nowrap;
 }
 
 .nav a:hover {
