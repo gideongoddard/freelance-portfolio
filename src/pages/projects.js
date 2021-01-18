@@ -1,7 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import ProjectSummary from "../components/ProjectSummary/ProjectSummary"
 import Title from "../components/Title/Title"
+import ProjectsStyles from "./projects.module.css"
+
+const Project = props => (
+    <div className={ProjectsStyles.project}>
+
+    </div>
+)
 
 export default function Projects() {
     return (

@@ -22,7 +22,6 @@
 
 .project a:hover {
     text-decoration: underline;
-    color: var(--accent-500);
 }
 
 .project {
@@ -32,6 +31,17 @@
 .project h3 {
     font-size: var(--type-s);
     margin: 16px 0;
+}
+
+.projectImg {
+    border-radius: 10px;
+    box-shadow: var(--shadow-xs);
+    transition: 300ms;
+}
+
+.projectImg:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-m);
 }
 
 @media only screen and (min-width: 960px) {

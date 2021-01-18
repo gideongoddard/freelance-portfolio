@@ -17,7 +17,7 @@ export default function Services() {
     return (
         <Layout>
             <Title
-                title="What it takes to make your website outstanding"
+                title="What it takes to create outstanding websites"
             />
             <section className={ServicesStyles.serviceSection}>
                 <div className={ServicesStyles.serviceContainer}>
