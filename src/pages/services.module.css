@@ -1,5 +1,6 @@
 .serviceSection {
     background-color: var(--neutral-100);
+    padding: 96px 0;
 }
 
 .serviceContainer {
