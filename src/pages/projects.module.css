@@ -9,7 +9,7 @@
 }
 
 .project {
-    margin: 64px 0;
+    margin: 32px 0 64px 0;
 }
 
 .project a {
@@ -34,7 +34,6 @@
 
 .project h2 {
     font-size: var(--type-m);
-    margin: 0 0 24px 0;
 }
 
 .imgCol {
@@ -44,11 +43,14 @@
 @media only screen and (min-width: 900px) {
     .project {
         display: flex;
-        flex-direction: row-reverse;
         gap: 48px;
     }
 
     .txtCol, .imgCol {
         width: 50%;
+    }
+
+    .project h2 {
+        margin: 0 0 24px 0;
     }
 }

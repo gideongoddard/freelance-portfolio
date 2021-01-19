@@ -7,16 +7,16 @@ import Img from "gatsby-image"
 
 const Project = props => (
     <div className={ProjectsStyles.project}>
+        <div className={ProjectsStyles.imgCol}>
+            <a href={props.href} target="_blank" rel="noopener noreferrer">
+                <Img fluid={props.imgSrc} alt={props.imgAlt} className={ProjectsStyles.projectImg} />
+            </a>
+        </div>
         <div className={ProjectsStyles.txtCol}>
             <a href={props.href} target="_blank" rel="noopener noreferrer">
                 <h2>{props.name}</h2>
             </a>
             {props.children}
-        </div>
-        <div className={ProjectsStyles.imgCol}>
-            <a href={props.href} target="_blank" rel="noopener noreferrer">
-                <Img fluid={props.imgSrc} alt={props.imgAlt} className={ProjectsStyles.projectImg} />
-            </a>
         </div>
     </div>
 )
