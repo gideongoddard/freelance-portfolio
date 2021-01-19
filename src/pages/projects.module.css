@@ -1,4 +1,4 @@
-.section {
+.projectsSection {
     padding-top: 0;
 }
 
@@ -10,6 +10,10 @@
 
 .project {
     margin: 32px 0 64px 0;
+}
+
+.project:last-child {
+    margin: 32px 0 8px 0;
 }
 
 .project a {
@@ -40,10 +44,34 @@
     width: 100%;
 }
 
+.calloutSection {
+    padding-top: 16px;
+}
+
+.callout {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 24px auto;
+    background: linear-gradient(90deg, var(--primary-900) 20%, var(--primary-600) 90%);
+    color: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-s);
+}
+
+.callout h3 {
+    font-size: var(--type-l);
+    margin: 24px 0;
+}
+
 @media only screen and (min-width: 900px) {
     .project {
         display: flex;
-        gap: 48px;
+        gap: 64px;
+    }
+
+    .project:last-child {
+        margin: 32px 0 64px 0;
     }
 
     .txtCol, .imgCol {
@@ -52,5 +80,10 @@
 
     .project h2 {
         margin: 0 0 24px 0;
+    }
+    
+    .callout {
+        margin: 0 auto 48px auto;
+        padding: 24px 48px;
     }
 }

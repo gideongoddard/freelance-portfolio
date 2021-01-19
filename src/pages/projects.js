@@ -4,6 +4,7 @@ import Title from "../components/Title/Title"
 import ProjectsStyles from "./projects.module.css"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Button from "../components/Button/Button"
 
 const Project = props => (
     <div className={ProjectsStyles.project}>
@@ -28,7 +29,7 @@ export default function Projects() {
                 title="Projects"
                 subtitle="Take a look at some of my recent work"
             />
-            <section className={ProjectsStyles.section}>
+            <section className={ProjectsStyles.projectsSection}>
                 <div className={ProjectsStyles.projectsContainer}>
                 <StaticQuery
                         query={graphql`
@@ -88,6 +89,13 @@ export default function Projects() {
                             </>
                         )}
                     />
+                </div>
+            </section>
+            <section className={ProjectsStyles.calloutSection}>
+                <div className={ProjectsStyles.callout}>
+                    <h3>Start your success story</h3>
+                    <p>Let's get started on building your online success story. You can schedule a call or send me a message and we'll arrange to talk through how I can help you achieve your goals.</p>
+                    <Button colour="primary" to="hire-me">Hire me today</Button>
                 </div>
             </section>
         </Layout>

@@ -91,6 +91,15 @@ p, li {
     line-height: 1.5;
 }
 
+a {
+    color: var(--accent-500);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 section {
     padding: 48px 0;
 }

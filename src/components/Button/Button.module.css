@@ -4,8 +4,8 @@
     font-size: var(--type-xs);
     color: white;
     text-decoration: none;
-    padding: 15px 30px;
-    margin: 20px 0;
+    padding: 16px 24px;
+    margin: 24px 0;
     border-radius: 10px;
     box-shadow: var(--shadow-xs);
     transition: 300ms;
@@ -19,6 +19,7 @@
     background-color: var(--primary-500);
     box-shadow: var(--shadow-s);
     transform: translateY(-1px);
+    text-decoration: none;
 }
 
 .accent {
@@ -29,6 +30,7 @@
     background-color: var(--accent-400);
     box-shadow: var(--shadow-s);
     transform: translateY(-1px);
+    text-decoration: none;
 }
 
 .neutral {
@@ -39,6 +41,7 @@
     background-color: var(--neutral-400);
     box-shadow: var(--shadow-s);
     transform: translateY(-1px);
+    text-decoration: none;
 }
 
 .primary:active, .accent:active, .neutral:active {

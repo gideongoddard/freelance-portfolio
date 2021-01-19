@@ -32,11 +32,11 @@ export default function Header() {
                     <div className={navOpen ? `${HeaderStyles.hamburgerOpen}` : `${HeaderStyles.hamburger}`}></div>
                 </div>
                 <nav className={HeaderStyles.nav} style={{right: navOpen ? "0" : "-100%"}}>
-                    <Link activeStyle={{color: "var(--primary-500)"}} to="/">Home</Link>
-                    <Link activeStyle={{color: "var(--primary-500)"}} to="/services">Services</Link>
-                    <Link activeStyle={{color: "var(--primary-500)"}} to="/projects">Projects</Link>
-                    <Link activeStyle={{color: "var(--primary-500)"}} to="/about">About</Link>
-                    <Link activeStyle={{color: "var(--primary-500)"}} to="/hire-me">Hire me</Link>
+                    <Link activeStyle={{color: "var(--primary-600)"}} to="/">Home</Link>
+                    <Link activeStyle={{color: "var(--primary-600)"}} to="/services">Services</Link>
+                    <Link activeStyle={{color: "var(--primary-600)"}} to="/projects">Projects</Link>
+                    <Link activeStyle={{color: "var(--primary-600)"}} to="/about">About</Link>
+                    <Link activeStyle={{color: "var(--primary-600)"}} to="/hire-me">Hire me</Link>
                 </nav>
             </div>
         </header>
