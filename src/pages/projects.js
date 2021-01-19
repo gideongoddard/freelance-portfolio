@@ -82,7 +82,8 @@ export default function Projects() {
                                 imgSrc={data.taxCalculator.childImageSharp.fluid}
                                 imgAlt="Income Tax Calculator website"
                             >
-                                <p></p>
+                                <p>A React app that calculates UK income tax based on annual income and country of residence (income tax in Scotland differs from the rest of the UK)</p>
+                                <p>The app returns your income tax contribution based on these inputs but also provides a breakdown, explaining how much tax is paid on each portion of salary.</p>
                             </Project>
                             </>
                         )}
