@@ -48,7 +48,7 @@ export default function ServiceSummary() {
                     />
                 </div>
                 <div className={SSStyles.buttonContainer}>
-                    <Button to="/services" colour="primary" type="internal">Found out more</Button>
+                    <Button to="/services" colour="neutral" type="internal">Read more about my services</Button>
                 </div>
             </div>
         </section>

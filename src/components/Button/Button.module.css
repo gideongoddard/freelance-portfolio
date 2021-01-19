@@ -34,11 +34,12 @@
 }
 
 .neutral {
-    background-color: var(--neutral-500);
+    background-color: var(--neutral-200);
+    color: var(--neutral-900);
 }
 
 .neutral:hover {
-    background-color: var(--neutral-400);
+    background-color: var(--neutral-300);
     box-shadow: var(--shadow-s);
     transform: translateY(-1px);
     text-decoration: none;

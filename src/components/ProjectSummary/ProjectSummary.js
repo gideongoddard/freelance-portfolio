@@ -1,5 +1,6 @@
 import React from "react"
 import PSStyles from "./ProjectSummary.module.css"
+import Button from "../Button/Button"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -70,6 +71,9 @@ export default function ProjectSummary() {
                             </>
                         )}
                     />
+                </div>
+                <div className={PSStyles.buttonContainer}>
+                    <Button to="/projects" colour="neutral" type="internal">View recent projects</Button>
                 </div>
             </div>
         </section>
