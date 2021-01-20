@@ -1,0 +1,9 @@
+.section {
+    padding-top: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
