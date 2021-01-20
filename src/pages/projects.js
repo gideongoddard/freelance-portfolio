@@ -95,7 +95,7 @@ export default function Projects() {
                 <div className={ProjectsStyles.callout}>
                     <h3>Start your success story</h3>
                     <p>Let's get started on building your online success story. You can schedule a call or send me a message and we'll arrange to talk through how I can help you achieve your goals.</p>
-                    <Button colour="primary" to="hire-me">Hire me today</Button>
+                    <Button colour="primary" to="/hire-me">Hire me today</Button>
                 </div>
             </section>
         </Layout>
