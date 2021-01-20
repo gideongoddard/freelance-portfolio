@@ -2,13 +2,23 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import AboutStyles from "./about.module.css"
+import Gideon from "../components/Gideon/Gideon"
+import Button from "../components/Button/Button"
+
+const Client = props => (
+    <div className={AboutStyles.client}>
+        <span className={AboutStyles.item}>{props.item}</span>
+        <h4>{props.heading}</h4>
+        <p>{props.description}</p>
+    </div>
+)
 
 export default function About() {
     return (
         <Layout>
             <Title title="Gideon Goddard" subtitle="Web Developer & Digital Consultant" />
-            <section className={AboutStyles.section}>
-                <div className={AboutStyles.container}>
+            <section className={AboutStyles.backgroundSection}>
+                <div className={AboutStyles.narrowContainer}>
                     <h4>I'm a professional freelance web developer & digital consultant based just outside Leicester, UK.</h4>
                     <h3>My background</h3>
                     <p>I have over a decade of experience in working on web projects for businesses at all stages - from start-ups to some of the world's biggest brands and lots in between!</p>
@@ -17,6 +27,28 @@ export default function About() {
                     <p><strong>That understanding is why I can ensure that any solution I recommend will be tailored to match your goals.</strong></p>
                 </div>
             </section>
+            <section className={AboutStyles.clientSection}>
+                <div className={AboutStyles.container}>
+                    <h3>Who I work with</h3>
+                    <div className={AboutStyles.clientContainer}>
+                        <Client
+                            item="01"
+                            heading="Start-ups"
+                            description="I work with newly started businesses that are looking to launch themselves on the web for the first time. Crafting a business's first website or online shop with a blank slate is a hugely exciting time that I love to be a part of."
+                        />
+                        <Client
+                            item="02"
+                            heading="Established companies"
+                            description="If your business has an existing website that you think could be improved, I'd be thrilled to hear from you. I excel in getting deep into analysing where a business's existing web presence is performing well and where there are areas for improvement."
+                        />
+                    </div>
+                </div>
+            </section>
+            <Gideon>
+                <p>There's a lot that goes into a website project and getting it all right isn't easy - and neither is choosing who to work with to make it happen!</p>
+                <p>I've got the industry experience needed to know how to get your project right and I take a lot of pride in the work that I do so you can be sure you're in good hands.</p>
+                <Button colour="primary" to="/hire-me" type="internal">Hire me today</Button>
+            </Gideon>
         </Layout>
     )
 }
