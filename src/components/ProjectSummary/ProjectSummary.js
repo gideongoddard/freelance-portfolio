@@ -73,7 +73,7 @@ export default function ProjectSummary() {
                     />
                 </div>
                 <div className={PSStyles.buttonContainer}>
-                    <Button to="/projects" colour="neutral" type="internal">View recent projects</Button>
+                    <Button to="/projects" colour="neutral" type="internal">View my recent projects</Button>
                 </div>
             </div>
         </section>

@@ -18,6 +18,13 @@
     background-color: var(--neutral-100);
     border-radius: 10px;
     padding: 24px;
+    box-shadow: var(--shadow-s);
+    transition: 300ms;
+}
+
+.client:hover {
+    box-shadow: var(--shadow-m);
+    transform: translateY(-5px);
 }
 
 .item {

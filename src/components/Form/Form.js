@@ -2,11 +2,11 @@ import React from "react"
 import FormStyles from "./Form.module.css"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
-export default function Form() {
+export default function Form(props) {
     return (
         <section className={FormStyles.section} id="contact">
             <div className={FormStyles.container}>
-                <h2>Get in touch</h2>
+                <h2>{props.heading}</h2>
                 <p>Tell me a little bit about your business and what you're looking for and I'll get back to you within 24 hrs. We can then arrange a chat to discuss how I can help, even if it’s just to offer some advice.</p>
                 <form method="post" action="/success" netlify-honeypot="bot-field" data-netlify="true" name="contact-form" className={FormStyles.form}>
                     <input type="hidden" name="bot-field" />
