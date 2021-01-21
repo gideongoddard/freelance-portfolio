@@ -53,7 +53,7 @@ export default function Home() {
         quote="Gideon is amazing! His services and knowledge have helped my business grow really well. Gideon is patient, kind, helpful and incredibly talented. I cannot recommend him highly enough!"
         client="Emily Coombes, Kibworth Osteopaths & Pilates"
       />
-      <Form heading="Get in touch" />
+      <Form heading="Get in touch" intro="Tell me a little bit about your business and what you're looking for and I'll get back to you within 24 hrs. We can then arrange a chat to discuss how I can help, even if it’s just to offer some advice." />
     </Layout>
   )
 }
