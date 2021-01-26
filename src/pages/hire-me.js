@@ -20,8 +20,8 @@ export default function HireMe() {
                         <ul>
                             <li>A brief background to your business</li>
                             <li>Where your business is at right now</li>
-                            <li>What your objectives for your business are</li>
-                            <li>What your existing web presence looks like</li>
+                            <li>Your objectives for your business</li>
+                            <li>Your existing web presence</li>
                         </ul>
                         <p>After the call, I'll spend some time creating some recommendations based on what we covered before we talk again to make a detailed plan of action.</p>
                     </div>
