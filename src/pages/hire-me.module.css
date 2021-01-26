@@ -1,6 +1,6 @@
 .section {
     background-image: url('../images/banner.jpg');
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
 }
