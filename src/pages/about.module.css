@@ -8,6 +8,12 @@
     margin: auto;
 }
 
+.narrowContainer h4 {
+    padding: 24px;
+    border-top: 1px solid var(--neutral-500);
+    border-bottom: 1px solid var(--neutral-500);
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -58,5 +64,9 @@
     .clientContainer {
         grid-template-columns: 1fr 1fr;
         grid-gap: 64px;
+    }
+
+    .narrowContainer h4 {
+        padding: 48px;
     }
 }

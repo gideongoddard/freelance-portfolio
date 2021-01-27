@@ -4,6 +4,8 @@ import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import Gideon from "../components/Gideon/Gideon"
 import Button from "../components/Button/Button"
+import { Helmet } from "react-helmet"
+import MetaImage from "../images/meta-image.png"
 
 const Service = props => (
     <div className={ServicesStyles.service}>
@@ -16,6 +18,26 @@ const Service = props => (
 export default function Services() {
     return (
         <Layout>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Services | Gideon Goddard, Web Developer</title>
+                <meta name="title" content="Services | Gideon Goddard, Web Developer" />
+                <meta name="description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://gideongoddard.co.uk/services" />
+                <meta property="og:title" content="Services | Gideon Goddard, Web Developer" />
+                <meta property="og:description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
+                <meta property="og:image" content={MetaImage} />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://gideongoddard.co.uk/services" />
+                <meta property="twitter:title" content="Services | Gideon Goddard, Web Developer" />
+                <meta property="twitter:description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
+                <meta property="twitter:image" content={MetaImage} />
+
+                <html lang="en"></html>
+            </Helmet>
             <Title
                 title="My Services"
                 subtitle="What it takes to create outstanding websites"

@@ -5,6 +5,8 @@ import ProjectsStyles from "./projects.module.css"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Button from "../components/Button/Button"
+import { Helmet } from "react-helmet"
+import MetaImage from "../images/meta-image.png"
 
 const Project = props => (
     <div className={ProjectsStyles.project}>
@@ -25,6 +27,26 @@ const Project = props => (
 export default function Projects() {
     return (
         <Layout>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Projects | Gideon Goddard, Web Developer</title>
+                <meta name="title" content="Projects | Gideon Goddard, Web Developer" />
+                <meta name="description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://gideongoddard.co.uk/projects" />
+                <meta property="og:title" content="Projects | Gideon Goddard, Web Developer" />
+                <meta property="og:description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
+                <meta property="og:image" content={MetaImage} />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://gideongoddard.co.uk/projects" />
+                <meta property="twitter:title" content="Projects | Gideon Goddard, Web Developer" />
+                <meta property="twitter:description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
+                <meta property="twitter:image" content={MetaImage} />
+
+                <html lang="en"></html>
+            </Helmet>
             <Title
                 title="Projects"
                 subtitle="Take a look at some of my recent work"

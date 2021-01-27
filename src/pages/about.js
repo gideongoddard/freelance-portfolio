@@ -4,6 +4,8 @@ import Title from "../components/Title/Title"
 import AboutStyles from "./about.module.css"
 import Gideon from "../components/Gideon/Gideon"
 import Button from "../components/Button/Button"
+import { Helmet } from "react-helmet"
+import MetaImage from "../images/meta-image.png"
 
 const Client = props => (
     <div className={AboutStyles.client}>
@@ -16,6 +18,26 @@ const Client = props => (
 export default function About() {
     return (
         <Layout>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>About | Gideon Goddard, Web Developer</title>
+                <meta name="title" content="About | Gideon Goddard, Web Developer" />
+                <meta name="description" content="A freelance web developer, digital strategist & consultant. I can help you and your business succeed online." />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://gideongoddard.co.uk/about" />
+                <meta property="og:title" content="About | Gideon Goddard, Web Developer" />
+                <meta property="og:description" content="A freelance web developer, digital strategist & consultant. I can help you and your business succeed online." />
+                <meta property="og:image" content={MetaImage} />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://gideongoddard.co.uk/about" />
+                <meta property="twitter:title" content="About | Gideon Goddard, Web Developer" />
+                <meta property="twitter:description" content="A freelance web developer, digital strategist & consultant. I can help you and your business succeed online." />
+                <meta property="twitter:image" content={MetaImage} />
+
+                <html lang="en"></html>
+            </Helmet>
             <Title title="Gideon Goddard" subtitle="Web Developer & Digital Consultant" />
             <section className={AboutStyles.backgroundSection}>
                 <div className={AboutStyles.narrowContainer}>

@@ -2,18 +2,23 @@
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    padding: 16px 0;
+    height: 100px;
     border-top: 1px solid var(--neutral-200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footerBottom p {
     font-size: var(--type-xxs);
+    margin: 8px 0;
 }
 
 @media only screen and (min-width: 600px) {
     .footerBottom {
-        display: flex;
+        height: 80px;
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: center;
     }
 }

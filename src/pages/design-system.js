@@ -7,10 +7,32 @@ import TypeScale from "../components/DesignSystem/TypeScale/TypeScale"
 import Button from "../components/Button/Button"
 import Title from "../components/Title/Title"
 import Layout from "../components/Layout/Layout"
+import { Helmet } from "react-helmet"
+import MetaImage from "../images/meta-image.png"
 
 export default function StyleGuide() {
     return (
         <Layout>
+          <Helmet>
+              <meta charSet="utf-8" />
+              <title>Design System | Gideon Goddard, Web Developer</title>
+              <meta name="title" content="Design System | Gideon Goddard, Web Developer" />
+              <meta name="description" content="Systematise everything - the website's design system is what makes it easy to create consistency and coherence in the design process." />
+
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content="https://gideongoddard.co.uk/design-system" />
+              <meta property="og:title" content="Design System | Gideon Goddard, Web Developer" />
+              <meta property="og:description" content="Systematise everything - the website's design system is what makes it easy to create consistency and coherence in the design process." />
+              <meta property="og:image" content={MetaImage} />
+
+              <meta property="twitter:card" content="summary_large_image" />
+              <meta property="twitter:url" content="https://gideongoddard.co.uk/design-system" />
+              <meta property="twitter:title" content="Design System | Gideon Goddard, Web Developer" />
+              <meta property="twitter:description" content="Systematise everything - the website's design system is what makes it easy to create consistency and coherence in the design process." />
+              <meta property="twitter:image" content={MetaImage} />
+
+              <html lang="en"></html>
+          </Helmet>
           <Title
             title="Website design system"
             subtitle={`"Systematise everything"`}
