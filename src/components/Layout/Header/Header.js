@@ -28,7 +28,7 @@ export default function Header() {
                         )}
                     />
                 </Link>
-                <div className={HeaderStyles.toggle} navOpen={navOpen} onClick={() => setNavOpen(!navOpen)}>
+                <div className={HeaderStyles.toggle} navOpen={navOpen} onClick={() => setNavOpen(!navOpen)} onKeyPress={() => setNavOpen(!navOpen)} role="button" tabIndex={0}>
                     <div className={navOpen ? `${HeaderStyles.hamburgerOpen}` : `${HeaderStyles.hamburger}`}></div>
                 </div>
                 <nav className={HeaderStyles.nav} style={{right: navOpen ? "0" : "-100%"}}>
