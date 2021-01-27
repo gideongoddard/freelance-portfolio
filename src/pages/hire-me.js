@@ -13,7 +13,7 @@ export default function HireMe() {
                 <div className={HMStyles.container}>
                     <div className={HMStyles.intro}>
                         <h2>Schedule a call</h2>
-                        <p>You can arrange an introductory telephone conversation for you to find out a bit more about me and for me to find out more about your business, your objectives and what you need.</p>
+                        <p>You can arrange an introductory phone call for you to find out a bit more about me and for me to find out more about how I can help you.</p>
                     </div>
                     <div className={HMStyles.detail}>
                         <h3>Here's what we'll cover:</h3>
@@ -23,7 +23,7 @@ export default function HireMe() {
                             <li>Your objectives for your business</li>
                             <li>Your existing web presence</li>
                         </ul>
-                        <p>After the call, I'll spend some time creating some recommendations based on what we covered before we talk again to make a detailed plan of action.</p>
+                        <p>After the call, I'll spend some time creating some recommendations before we talk again to make a detailed plan of action.</p>
                     </div>
                     <div className={HMStyles.buttonContainer}>
                         <Button colour="primary" to="https://calendly.com/gideon-goddard/intro" type="external">Schedule a call</Button>

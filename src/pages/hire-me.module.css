@@ -1,12 +1,13 @@
 .section {
-    background-image: url('../images/banner.jpg');
+    background-image: url('../images/banner-2.jpg');
     background-position: bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1000px;
     margin: auto;
     padding: 24px;
@@ -21,6 +22,10 @@
 .detail h3 {
     font-size: var(--type-s);
     font-weight: 500;
+}
+
+.detail ul {
+    padding-left: 12px;
 }
 
 .buttonContainer {
