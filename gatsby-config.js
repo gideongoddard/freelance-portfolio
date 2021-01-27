@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    siteUrl: `https://gideongoddard.co.uk`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -22,6 +25,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/`
       }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/success`],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
