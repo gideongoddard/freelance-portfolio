@@ -1,5 +1,6 @@
 import React from "react"
 import PSStyles from "./ProjectSummary.module.css"
+import Button from "../Button/Button"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -49,7 +50,7 @@ export default function ProjectSummary() {
                         `}
                         render={data => (
                             <>
-                            <Project 
+                            <Project
                                 name="Kibworth Osteopaths & Pilates"
                                 href="https://kibworthosteopaths.co.uk"
                                 imgSrc={data.kibworthOsteopaths.childImageSharp.fluid}
@@ -70,6 +71,9 @@ export default function ProjectSummary() {
                             </>
                         )}
                     />
+                </div>
+                <div className={PSStyles.buttonContainer}>
+                    <Button to="/projects" colour="neutral" type="internal">View my recent projects</Button>
                 </div>
             </div>
         </section>

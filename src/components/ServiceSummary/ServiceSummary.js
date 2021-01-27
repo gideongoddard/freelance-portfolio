@@ -1,5 +1,6 @@
 import React from "react"
 import SSStyles from "./ServiceSummary.module.css"
+import Button from "../Button/Button"
 
 const Service = props => (
     <div className={SSStyles.service}>
@@ -45,6 +46,9 @@ export default function ServiceSummary() {
                         heading="Analysis & Improvement"
                         description="It's important to make the most of your investment. I offer packages to maintain your site,  analyse how it's performing and recommend incremental improvements to get better results."
                     />
+                </div>
+                <div className={SSStyles.buttonContainer}>
+                    <Button to="/services" colour="neutral" type="internal">Read more about my services</Button>
                 </div>
             </div>
         </section>

@@ -11,13 +11,14 @@
 .form {
     max-width: 600px;
     margin: auto;
-    padding-top: 24px;
+    padding: 24px 0;
     display: flex;
     flex-direction: column;
 }
 
 .form label {
     padding-left: 4px;
+    font-size: var(--type-xs);
 }
 
 .form input[type="text"], .form input[type="email"], .form textarea {

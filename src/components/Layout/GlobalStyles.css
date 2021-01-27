@@ -1,7 +1,7 @@
 :root {
     /* Type scale */
-    --type-xxs: calc(14px + 0.2vw);
-    --type-xs: calc(16px + 0.3vw);
+    --type-xxs: calc(14px + 0.1vw);
+    --type-xs: calc(16px + 0.2vw);
     --type-s: calc(18px + 0.5vw);
     --type-m: calc(20px + 0.75vw);
     --type-l: calc(22px + 1vw);
@@ -73,21 +73,32 @@ h3 {
 }
 
 h4 {
-    font-size: var(--type-l);
-    font-weight: 500;
+    font-size: var(--type-m);
+    font-weight: 600;
 }
 
 h5 {
     font-size: var(--type-m);
-}
-
-h6 {
-    font-size: var(--type-m);
     font-weight: 500;
 }
 
-p {
-    font-size: var(--type-xxs);
+h6 {
+    font-size: var(--type-s);
+    font-weight: 600;
+}
+
+p, li {
+    font-size: var(--type-xs);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--accent-500);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {

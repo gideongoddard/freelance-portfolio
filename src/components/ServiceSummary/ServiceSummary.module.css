@@ -14,7 +14,7 @@
 .service {
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    padding: 8px 0;
     margin: 8px 0 24px 0;
 }
 
@@ -40,6 +40,11 @@
     margin: 0;
 }
 
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 600px) {
     .serviceContainer {
         display: grid;
@@ -51,5 +56,9 @@
 @media only screen and (min-width: 900px) {
     .serviceContainer {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .buttonContainer {
+        padding: 24px 0;
     }
 }

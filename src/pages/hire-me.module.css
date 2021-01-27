@@ -1,0 +1,44 @@
+.section {
+    background-image: url('../images/banner-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 24px;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 10px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.detail h3 {
+    font-size: var(--type-s);
+    font-weight: 500;
+}
+
+.detail ul {
+    padding-left: 12px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .detail ul {
+        columns: auto 2;
+    }
+
+    .container {
+        padding: 24px 64px;
+    }
+}

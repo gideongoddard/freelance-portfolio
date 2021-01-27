@@ -5,7 +5,7 @@ import Button from "../Button/Button"
 export default function Title(props) {
     return (
         <section className={TitleStyles.section}>
-            <div>
+            <div className={TitleStyles.container}>
                 <h1>{props.title}</h1>
                 {
                     props.subtitle ? (

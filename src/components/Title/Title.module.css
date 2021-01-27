@@ -1,4 +1,7 @@
-.section div {
+.section {
+}
+
+.container {
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -8,16 +11,17 @@
     max-width: 800px;
     margin: auto;
     text-align: center;
-    padding: calc(5em + 2vw) 0;
+    padding: 64px 0;
 }
 
 .section h1 {
     font-size: var(--type-xxl);
-    margin-bottom: 20px;
+    margin: 24px 0;
     line-height: 1.25em;
 }
 
 .section h2 {
+    margin: 24px 0;
     font-size: var(--type-s);
     font-weight: 500;
     width: 90%;

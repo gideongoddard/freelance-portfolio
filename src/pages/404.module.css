@@ -1,0 +1,32 @@
+.container {
+    background-image: url('../images/error.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 165px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+.container p {
+    margin: 0;
+}
+
+.container h1, .container p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        min-height: calc(100vh - 145px);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        min-height: calc(100vh - 155px);
+    }
+}

@@ -22,7 +22,6 @@
 
 .project a:hover {
     text-decoration: underline;
-    color: var(--accent-500);
 }
 
 .project {
@@ -34,9 +33,29 @@
     margin: 16px 0;
 }
 
+.projectImg {
+    border-radius: 10px;
+    box-shadow: var(--shadow-xs);
+    transition: 300ms;
+}
+
+.projectImg:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-m);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 960px) {
     .projectsContainer {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 48px;
+    }
+
+    .buttonContainer {
+        padding: 24px 0;
     }
 }
