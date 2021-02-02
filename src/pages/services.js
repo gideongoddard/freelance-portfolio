@@ -25,13 +25,13 @@ export default function Services() {
                 <meta name="description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://gideongoddard.co.uk/services" />
+                <meta property="og:url" content="https://gideongoddard.co.uk/services/" />
                 <meta property="og:title" content="Services | Gideon Goddard, Web Developer" />
                 <meta property="og:description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
                 <meta property="og:image" content={MetaImage} />
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://gideongoddard.co.uk/services" />
+                <meta property="twitter:url" content="https://gideongoddard.co.uk/services/" />
                 <meta property="twitter:title" content="Services | Gideon Goddard, Web Developer" />
                 <meta property="twitter:description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
                 <meta property="twitter:image" content={MetaImage} />
@@ -72,7 +72,7 @@ export default function Services() {
             </section>
             <Gideon>
                 <p>My background of over a decade of working on web projects for growing small businesses and some of the world's biggest brands - plus much in between - gives me the expertise to not only create you a website, but to make sure we create you the <em>right</em> website to deliver results for your business.</p>
-                <Button colour="primary" type="internal" to="/hire-me">Let's get started</Button>
+                <Button colour="primary" type="internal" to="/hire-me/">Let's get started</Button>
             </Gideon>
         </Layout>
     )

@@ -39,7 +39,7 @@ export default function Home() {
         button={true}
         buttonType="internal"
         buttonColour="accent"
-        buttonTo="/hire-me"
+        buttonTo="/hire-me/"
         buttonText="Let's get started"
       />
       <ServiceSummary />
@@ -47,7 +47,7 @@ export default function Home() {
       <Gideon>
         <h3>Hi, I'm Gideon.</h3>
         <p>I help businesses succeed online by creating websites that convert visits into enquiries and sales.</p>
-        <Button type="internal" colour="primary" to="/hire-me">Let's talk</Button>
+        <Button type="internal" colour="primary" to="/hire-me/">Let's talk</Button>
       </Gideon>
       <Testimonial
         quote="Gideon is amazing! His services and knowledge have helped my business grow really well. Gideon is patient, kind, helpful and incredibly talented. I cannot recommend him highly enough!"

@@ -34,13 +34,13 @@ export default function Projects() {
                 <meta name="description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://gideongoddard.co.uk/projects" />
+                <meta property="og:url" content="https://gideongoddard.co.uk/projects/" />
                 <meta property="og:title" content="Projects | Gideon Goddard, Web Developer" />
                 <meta property="og:description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
                 <meta property="og:image" content={MetaImage} />
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://gideongoddard.co.uk/projects" />
+                <meta property="twitter:url" content="https://gideongoddard.co.uk/projects/" />
                 <meta property="twitter:title" content="Projects | Gideon Goddard, Web Developer" />
                 <meta property="twitter:description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
                 <meta property="twitter:image" content={MetaImage} />
@@ -58,21 +58,21 @@ export default function Projects() {
                             query {
                                 kibworthOsteopaths: file(relativePath: {eq: "images/kibworthosteopaths.png"}) {
                                     childImageSharp {
-                                        fluid(maxWidth: 900, quality: 72) {
+                                        fluid(maxWidth: 810, quality: 72) {
                                             ...GatsbyImageSharpFluid
                                         }
                                     }
                                 }
                                 caplinSolar: file(relativePath: {eq: "images/caplinsolar.png"}) {
                                     childImageSharp {
-                                        fluid(maxWidth: 900, quality: 72) {
+                                        fluid(maxWidth: 810, quality: 72) {
                                             ...GatsbyImageSharpFluid
                                         }
                                     }
                                 }
                                 taxCalculator: file(relativePath: {eq: "images/tax-calc-results.png"}) {
                                     childImageSharp {
-                                        fluid(maxWidth: 900, quality: 72) {
+                                        fluid(maxWidth: 810, quality: 72) {
                                             ...GatsbyImageSharpFluid
                                         }
                                     }
@@ -117,7 +117,7 @@ export default function Projects() {
                 <div className={ProjectsStyles.callout}>
                     <h3>Start your success story</h3>
                     <p>Let's get started on building your online success story. You can schedule a call or send me a message and we'll arrange to talk through how I can help you achieve your goals.</p>
-                    <Button colour="primary" to="/hire-me">Hire me today</Button>
+                    <Button colour="primary" to="/hire-me/">Hire me today</Button>
                 </div>
             </section>
         </Layout>
