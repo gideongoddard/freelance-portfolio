@@ -8,8 +8,11 @@
     margin: auto;
 }
 
-.narrowContainer h4 {
+.pitch {
+    font-size: var(--type-m);
+    font-weight: 600;
     padding: 24px;
+    margin: 32px 0;
     border-top: 1px solid var(--neutral-500);
     border-bottom: 1px solid var(--neutral-500);
 }
@@ -66,7 +69,9 @@
         grid-gap: 64px;
     }
 
-    .narrowContainer h4 {
+    .pitch {
         padding: 48px;
+        line-height: 1.2;
+        margin: 48px 0;
     }
 }

@@ -41,7 +41,7 @@ export default function About() {
             <Title title="Gideon Goddard" subtitle="Web Developer & Digital Consultant" />
             <section className={AboutStyles.backgroundSection}>
                 <div className={AboutStyles.narrowContainer}>
-                    <h4>I'm a professional freelance web developer & digital consultant based just outside Leicester, UK.</h4>
+                    <p className={AboutStyles.pitch}>I'm a professional freelance web developer & digital consultant based just outside Leicester, UK.</p>
                     <h3>My background</h3>
                     <p>I have over a decade of experience in working on web projects for businesses at all stages - from start-ups to some of the world's biggest brands and lots in between!</p>
                     <p>Before becoming a web developer, I worked for digital agencies as a Project Manager for many years, working very closely with business owners, marketing managers and more to deliver website projects to meet their business objectives.</p>
