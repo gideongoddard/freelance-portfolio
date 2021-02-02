@@ -31,6 +31,10 @@
     padding: 0 3vw;
 }
 
+.toggle:focus {
+    outline: none;
+}
+
 .hamburger {
     background-color: black;
     width: 25px;
