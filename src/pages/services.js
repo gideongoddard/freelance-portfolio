@@ -30,11 +30,11 @@ export default function Services() {
                 <meta property="og:description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
                 <meta property="og:image" content={MetaImage} />
 
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://gideongoddard.co.uk/services/" />
-                <meta property="twitter:title" content="Services | Gideon Goddard, Web Developer" />
-                <meta property="twitter:description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
-                <meta property="twitter:image" content={MetaImage} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="https://gideongoddard.co.uk/services/" />
+                <meta name="twitter:title" content="Services | Gideon Goddard, Web Developer" />
+                <meta name="twitter:description" content="From digital strategy to SEO, from web design & development to testing, analysis & improvement, there's a lot that goes into making an outstanding website. Partner with me and don't leave it to chance." />
+                <meta name="twitter:image" content={MetaImage} />
 
                 <html lang="en"></html>
             </Helmet>

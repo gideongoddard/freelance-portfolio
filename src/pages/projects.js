@@ -39,11 +39,11 @@ export default function Projects() {
                 <meta property="og:description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
                 <meta property="og:image" content={MetaImage} />
 
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://gideongoddard.co.uk/projects/" />
-                <meta property="twitter:title" content="Projects | Gideon Goddard, Web Developer" />
-                <meta property="twitter:description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
-                <meta property="twitter:image" content={MetaImage} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="https://gideongoddard.co.uk/projects/" />
+                <meta name="twitter:title" content="Projects | Gideon Goddard, Web Developer" />
+                <meta name="twitter:description" content="Take a look at some of my recent work and find out how I can help you to start your own online success story." />
+                <meta name="twitter:image" content={MetaImage} />
 
                 <html lang="en"></html>
             </Helmet>
