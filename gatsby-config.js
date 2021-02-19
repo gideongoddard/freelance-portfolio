@@ -19,6 +19,8 @@ module.exports = {
         ],
         gtagConfig: {
           anonymize_ip: true,
+          cookie_domain: "gideongoddard.co.uk",
+          cookie_flags: "SameSite=None;Secure",
         },
         pluginConfig: {
           head: true,
