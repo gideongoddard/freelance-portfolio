@@ -25,11 +25,11 @@ export default function StyleGuide() {
               <meta property="og:description" content="Systematise everything - the website's design system is what makes it easy to create consistency and coherence in the design process." />
               <meta property="og:image" content={MetaImage} />
 
-              <meta property="twitter:card" content="summary_large_image" />
-              <meta property="twitter:url" content="https://gideongoddard.co.uk/design-system" />
-              <meta property="twitter:title" content="Design System | Gideon Goddard, Web Developer" />
-              <meta property="twitter:description" content="Systematise everything - the website's design system is what makes it easy to create consistency and coherence in the design process." />
-              <meta property="twitter:image" content={MetaImage} />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:url" content="https://gideongoddard.co.uk/design-system" />
+              <meta name="twitter:title" content="Design System | Gideon Goddard, Web Developer" />
+              <meta name="twitter:description" content="Systematise everything - the website's design system is what makes it easy to create consistency and coherence in the design process." />
+              <meta name="twitter:image" content={MetaImage} />
 
               <html lang="en"></html>
           </Helmet>

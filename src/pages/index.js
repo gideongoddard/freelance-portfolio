@@ -25,11 +25,11 @@ export default function Home() {
         <meta property="og:description" content="A freelance web developer, digital strategist & consultant. I can help you and your business succeed online." />
         <meta property="og:image" content={MetaImage} />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://gideongoddard.co.uk/" />
-        <meta property="twitter:title" content="Gideon Goddard | Web Developer" />
-        <meta property="twitter:description" content="A freelance web developer, digital strategist & consultant. I can help you and your business succeed online." />
-        <meta property="twitter:image" content={MetaImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://gideongoddard.co.uk/" />
+        <meta name="twitter:title" content="Gideon Goddard | Web Developer" />
+        <meta name="twitter:description" content="A freelance web developer, digital strategist & consultant. I can help you and your business succeed online." />
+        <meta name="twitter:image" content={MetaImage} />
 
         <html lang="en"></html>
       </Helmet>

@@ -11,13 +11,20 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-121836060-2",
-        head: true,
-        anonymize: true,
-        cookieDomain: "gideongoddard.co.uk",
-        cookieFlags: "SameSite=None;Secure"
+        trackingIds: [
+          "G-L7XRK7F88K",
+          "AW-415626096",
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_domain: "gideongoddard.co.uk",
+          cookie_flags: "SameSite=None;Secure",
+        },
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     {
