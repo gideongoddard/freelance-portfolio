@@ -9,9 +9,11 @@ class Form extends React.Component {
     }
 
     handleClick() {
-        typeof window !== "undefined" && window.gtag("event", "conversion", {
-            send_to: "AW-415626096/ugDZCLuew_YBEPDml8YB"
-        })
+        if (typeof window !== "undefined") {
+            window.gtag("event", "conversion", {
+                send_to: "AW-415626096/ugDZCLuew_YBEPDml8YB"
+            })
+        }
     }
 
     render() {
