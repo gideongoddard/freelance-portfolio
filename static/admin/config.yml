@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: gideongoddard/freelance-portfolio
+  branch: cms
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "site/content/home.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
