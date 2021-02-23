@@ -1,3 +1,1 @@
----
-title: Outstanding websites that deliver results.
----
+title: I can control this content
