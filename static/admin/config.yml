@@ -12,6 +12,6 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "site/content/home.md"
+        file: "site/content/home.yml"
         fields:
           - {label: Title, name: title, widget: string}
