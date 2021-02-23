@@ -1,7 +1,5 @@
 backend:
-  name: github
-  repo: gideongoddard/freelance-portfolio
-  branch: cms
+  name: git-gateway
 
 media_folder: static/assets
 public_folder: /assets
