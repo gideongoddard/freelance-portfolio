@@ -34,6 +34,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/site/content`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [`/success`],
@@ -43,5 +50,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
   ],
 }

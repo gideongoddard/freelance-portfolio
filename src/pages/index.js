@@ -9,8 +9,9 @@ import Testimonial from "../components/Testimonial/Testimonial"
 import Title from "../components/Title/Title"
 import Button from "../components/Button/Button"
 import MetaImage from "../images/meta-image.png"
+import { graphql } from "gatsby"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
       <Helmet>
@@ -34,7 +35,7 @@ export default function Home() {
         <html lang="en"></html>
       </Helmet>
       <Title
-        title="Outstanding websites that deliver results"
+        title={data.allFile.edges[0].node.childMarkdownRemark.frontmatter.title}
         subtitle="I help your business achieve its online goals"
         button={true}
         buttonType="internal"
@@ -57,3 +58,19 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    allFile(filter: {sourceInstanceName: {eq: "content"}, name: {eq: "home"}}) {
+      edges {
+        node {
+          childMarkdownRemark {
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
+    }
+  }
+`
