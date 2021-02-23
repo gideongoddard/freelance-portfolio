@@ -35,7 +35,7 @@ export default function Home({ data }) {
         <html lang="en"></html>
       </Helmet>
       <Title
-        title="Title goes here"
+        title={data.allFile.edges[0].node.childContentYaml.title}
         subtitle="I help your business achieve its online goals"
         button={true}
         buttonType="internal"
