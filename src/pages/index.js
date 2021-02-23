@@ -35,7 +35,7 @@ export default function Home({ data }) {
         <html lang="en"></html>
       </Helmet>
       <Title
-        title={data.allFile.edges[0].node.childMarkdownRemark.frontmatter.title}
+        title="Title goes here"
         subtitle="I help your business achieve its online goals"
         button={true}
         buttonType="internal"
@@ -64,10 +64,8 @@ export const query = graphql`
     allFile(filter: {sourceInstanceName: {eq: "content"}, name: {eq: "home"}}) {
       edges {
         node {
-          childMarkdownRemark {
-            frontmatter {
-              title
-            }
+          childContentYaml {
+            title
           }
         }
       }
