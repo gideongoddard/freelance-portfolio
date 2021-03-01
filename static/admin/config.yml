@@ -13,3 +13,5 @@ collections:
         file: "site/content/home.yml"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Button text, name: button, widget: string}
