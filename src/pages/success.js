@@ -11,6 +11,12 @@ export default function Success() {
                 <title>Success | Gideon Goddard, Web Developer</title>
 
                 <html lang="en"></html>
+
+                <script>
+                    {`
+                        gtag('event', 'conversion', {'send_to': 'AW-415626096/ugDZCLuew_YBEPDml8YB'});
+                    `}
+                </script>
             </Helmet>
             <div className={SuccessStyles.container}>
                 <div className={SuccessStyles.content}>
