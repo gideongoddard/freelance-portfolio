@@ -12,6 +12,8 @@ import MetaImage from "../images/meta-image.png"
 import { graphql } from "gatsby"
 
 export default function Home({ data }) {
+  const content = data.allFile.edges[0].node.childContentYaml
+
   return (
     <Layout>
       <Helmet>
@@ -35,13 +37,13 @@ export default function Home({ data }) {
         <html lang="en"></html>
       </Helmet>
       <Title
-        title={data.allFile.edges[0].node.childContentYaml.title}
-        subtitle="I help your business achieve its online goals"
+        title={content.title}
+        subtitle={content.subtitle}
         button={true}
         buttonType="internal"
         buttonColour="accent"
         buttonTo="/hire-me/"
-        buttonText="Let's get started"
+        buttonText={content.button}
       />
       <ServiceSummary />
       <ProjectSummary />
@@ -66,6 +68,8 @@ export const query = graphql`
         node {
           childContentYaml {
             title
+            subtitle
+            button
           }
         }
       }
