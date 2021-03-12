@@ -48,7 +48,7 @@ export default function Projects() {
                 <html lang="en"></html>
             </Helmet>
             <Title>
-                <h1>Recent <span className="highlight">projects</span> that demonstrate my work</h1>
+                <h1>Recent <span className="highlight">projects</span> to demonstrate my work</h1>
             </Title>
             <section className={ProjectsStyles.projectsSection}>
                 <div className={ProjectsStyles.projectsContainer}>
