@@ -38,10 +38,10 @@ export default function Services() {
 
                 <html lang="en"></html>
             </Helmet>
-            <Title
-                title="My Services"
-                subtitle="What it takes to create outstanding websites"
-            />
+            <Title subtitle="What it takes to create outstanding websites">
+                <h1>Making <span className="highlight">expert knowledge</span> available to you</h1>
+                <h2>Creating a website is easy. Creating a website that delivers results for your business isn't. Here's what goes into creating truly outstanding websites that are focused on your objectives as well as what your customers needs.</h2>
+            </Title>
             <section className={ServicesStyles.serviceSection}>
                 <div className={ServicesStyles.serviceContainer}>
                     <Service item="01" heading="Digital Strategy">

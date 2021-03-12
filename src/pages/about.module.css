@@ -1,5 +1,5 @@
 .backgroundSection {
-    padding-top: 0;
+    background-color: var(--neutral-100);
 }
 
 .narrowContainer {

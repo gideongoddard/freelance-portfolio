@@ -47,10 +47,9 @@ export default function Projects() {
 
                 <html lang="en"></html>
             </Helmet>
-            <Title
-                title="Projects"
-                subtitle="Take a look at some of my recent work"
-            />
+            <Title>
+                <h1>Recent <span className="highlight">projects</span> that demonstrate my work</h1>
+            </Title>
             <section className={ProjectsStyles.projectsSection}>
                 <div className={ProjectsStyles.projectsContainer}>
                 <StaticQuery

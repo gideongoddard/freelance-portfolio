@@ -30,7 +30,10 @@ export default function HireMe() {
 
                 <html lang="en"></html>
             </Helmet>
-            <Title title="Work with me" subtitle="Let's create an outstanding website for your business to unlock your potential on the web" />
+            <Title>
+                <h1>Let's work <span className="highlight">together</span></h1>
+                <h2>Work with me to create an outstanding website for your business and unlock your potential on the web. Get in touch today to start the conversation.</h2>
+            </Title>
             <section className={HMStyles.section}>
                 <div className={HMStyles.container}>
                     <div className={HMStyles.intro}>

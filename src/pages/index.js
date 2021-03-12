@@ -9,11 +9,8 @@ import Testimonial from "../components/Testimonial/Testimonial"
 import Title from "../components/Title/Title"
 import Button from "../components/Button/Button"
 import MetaImage from "../images/meta-image.png"
-import { graphql } from "gatsby"
 
-export default function Home({ data }) {
-  const content = data.allFile.edges[0].node.childContentYaml
-
+export default function Home() {
   return (
     <Layout>
       <Helmet>
@@ -37,14 +34,15 @@ export default function Home({ data }) {
         <html lang="en"></html>
       </Helmet>
       <Title
-        title={content.title}
-        subtitle={content.subtitle}
         button={true}
         buttonType="internal"
         buttonColour="accent"
         buttonTo="/hire-me/"
-        buttonText={content.button}
-      />
+        buttonText="Let's get started"
+      >
+        <h1>Bringing you <span className="highlight">outstanding</span> websites that deliver results</h1>
+        <h2>I help your business achieve its online goals by combining years of industry experience with a breadth and depth of knowledge and expertise to deliver the right solution for you.</h2>
+      </Title>
       <ServiceSummary />
       <ProjectSummary />
       <Gideon>
@@ -60,19 +58,3 @@ export default function Home({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    allFile(filter: {sourceInstanceName: {eq: "content"}, name: {eq: "home"}}) {
-      edges {
-        node {
-          childContentYaml {
-            title
-            subtitle
-            button
-          }
-        }
-      }
-    }
-  }
-`
