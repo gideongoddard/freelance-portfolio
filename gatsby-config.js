@@ -52,5 +52,6 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
+    `gatsby-plugin-fontawesome-css`,
   ],
 }
