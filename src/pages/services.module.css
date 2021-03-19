@@ -18,6 +18,7 @@
     background-color: white;
     box-shadow: var(--shadow-s);
     transition: all 300ms;
+    will-change: transform;
 }
 
 .service:hover {
