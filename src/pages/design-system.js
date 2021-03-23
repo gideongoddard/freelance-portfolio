@@ -33,10 +33,10 @@ export default function StyleGuide() {
 
               <html lang="en"></html>
           </Helmet>
-          <Title
-            title="Website design system"
-            subtitle={`"Systematise everything"`}
-          />
+          <Title>
+            <h1>Design System</h1>
+            <h2>"Systematise everything..."</h2>
+          </Title>
           <DesignSystemSection
             heading="Type scale"
             description="The type scale consists of 7 font sizes, each of which is a calculation combining 'px' and 'vw' units. Larger sizes scale up and down more than smaller sizes."
