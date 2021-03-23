@@ -33,7 +33,6 @@
 }
 
 .leftIcon, .rightIcon {
-    font-size: var(--type-xl);
     cursor: pointer;
     color: hsla(0, 0%, 100%, .8);
 }

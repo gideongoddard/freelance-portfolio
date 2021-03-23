@@ -58,9 +58,9 @@ export default function Slideshow() {
         {name: "img1", path: data.img1.childImageSharp.fluid, alt: "Person sitting on the end of a pier with mountains in the background"},
         {name: "img2", path: data.img2.childImageSharp.fluid, alt: "A long straight road framed by trees with autumnal leaves"},
         {name: "img3", path: data.img3.childImageSharp.fluid, alt: "A bench under the branches of a tree with fog in the background"},
-        {name: "img4", path: data.img4.childImageSharp.fluid, alt: "A pier leading "},
-        {name: "img5", path: data.img5.childImageSharp.fluid, alt: ""},
-        {name: "img6", path: data.img6.childImageSharp.fluid, alt: ""},
+        {name: "img4", path: data.img4.childImageSharp.fluid, alt: "A pier leading to a lake with snow-capped mountains in the background"},
+        {name: "img5", path: data.img5.childImageSharp.fluid, alt: "A hilltop bench near a large tree with whispy clouds above"},
+        {name: "img6", path: data.img6.childImageSharp.fluid, alt: "A closeup view of some snowdrop flowers"},
     ]
 
     const [imageIndex, setImageIndex] = useState(0);
@@ -69,8 +69,8 @@ export default function Slideshow() {
         <Layout>
             <div className={SlideshowStyles.main}>
                 <div className={SlideshowStyles.iconContainer}>
-                    <FontAwesomeIcon style={{display: imageIndex === 0 ? "none" : "block"}} className={SlideshowStyles.leftIcon} icon={faChevronCircleLeft} onClick={() => setImageIndex(imageIndex - 1)} />
-                    <FontAwesomeIcon style={{display: imageIndex === (images.length - 1) ? "none" : "block"}} className={SlideshowStyles.rightIcon} icon={faChevronCircleRight} onClick={() => setImageIndex(imageIndex + 1)} />
+                    <FontAwesomeIcon style={{fontSize: "var(--type-xl)", display: imageIndex === 0 ? "none" : "block"}} className={SlideshowStyles.leftIcon} icon={faChevronCircleLeft} onClick={() => setImageIndex(imageIndex - 1)} />
+                    <FontAwesomeIcon style={{fontSize: "var(--type-xl)", display: imageIndex === (images.length - 1) ? "none" : "block"}} className={SlideshowStyles.rightIcon} icon={faChevronCircleRight} onClick={() => setImageIndex(imageIndex + 1)} />
                 </div>
                 <div className={SlideshowStyles.imgContainer}>
                     <Img fluid={images[imageIndex].path} alt={images[imageIndex].alt} />
