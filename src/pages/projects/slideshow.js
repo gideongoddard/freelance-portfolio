@@ -1,81 +1,69 @@
-import React, { useState } from "react"
-import SlideshowStyles from "./slideshow.module.css"
+import React from "react"
 import Layout from "../../components/Layout/Layout"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
+import { graphql } from "gatsby"
+import Carousel from "../../components/Carousel/Carousel"
 
-export default function Slideshow() {
-    const data = useStaticQuery(graphql`
-        query {
-            img1: file(relativePath: {eq: "images/person-on-pier.jpeg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 800, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            img2: file(relativePath: {eq: "images/autumn-road.jpeg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 800, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            img3: file(relativePath: {eq: "images/bench-under-tree.jpeg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 800, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            img4: file(relativePath: {eq: "images/empty-pier.jpeg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 800, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            img5: file(relativePath: {eq: "images/hilltop-bench.jpeg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 800, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            img6: file(relativePath: {eq: "images/flowers.jpeg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 800, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
+export default function Slideshow({ data }) {
 
     const images = [
-        {name: "img1", path: data.img1.childImageSharp.fluid, alt: "Person sitting on the end of a pier with mountains in the background"},
-        {name: "img2", path: data.img2.childImageSharp.fluid, alt: "A long straight road framed by trees with autumnal leaves"},
-        {name: "img3", path: data.img3.childImageSharp.fluid, alt: "A bench under the branches of a tree with fog in the background"},
-        {name: "img4", path: data.img4.childImageSharp.fluid, alt: "A pier leading to a lake with snow-capped mountains in the background"},
-        {name: "img5", path: data.img5.childImageSharp.fluid, alt: "A hilltop bench near a large tree with whispy clouds above"},
-        {name: "img6", path: data.img6.childImageSharp.fluid, alt: "A closeup view of some snowdrop flowers"},
+        {name: "img1", path: data.img1.childImageSharp.fluid, alt: "Greece"},
+        {name: "img2", path: data.img2.childImageSharp.fluid, alt: "Italy"},
+        {name: "img3", path: data.img3.childImageSharp.fluid, alt: "Germany"},
+        {name: "img4", path: data.img4.childImageSharp.fluid, alt: "France"},
+        {name: "img5", path: data.img5.childImageSharp.fluid, alt: "Norway"},
+        {name: "img6", path: data.img6.childImageSharp.fluid, alt: "New Zealand"},
     ]
-
-    const [imageIndex, setImageIndex] = useState(0);
     
     return (
         <Layout>
-            <div className={SlideshowStyles.main}>
-                <div className={SlideshowStyles.iconContainer}>
-                    <FontAwesomeIcon style={{fontSize: "var(--type-xl)", display: imageIndex === 0 ? "none" : "block"}} className={SlideshowStyles.leftIcon} icon={faChevronCircleLeft} onClick={() => setImageIndex(imageIndex - 1)} />
-                    <FontAwesomeIcon style={{fontSize: "var(--type-xl)", display: imageIndex === (images.length - 1) ? "none" : "block"}} className={SlideshowStyles.rightIcon} icon={faChevronCircleRight} onClick={() => setImageIndex(imageIndex + 1)} />
-                </div>
-                <div className={SlideshowStyles.imgContainer}>
-                    <Img fluid={images[imageIndex].path} alt={images[imageIndex].alt} />
-                </div>
-            </div>
+            <Carousel images={images} />
         </Layout>
     )
 }
+
+export const query = graphql`
+    query {
+        img1: file(relativePath: {eq: "images/greece.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        img2: file(relativePath: {eq: "images/italy.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        img3: file(relativePath: {eq: "images/germany.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        img4: file(relativePath: {eq: "images/france.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        img5: file(relativePath: {eq: "images/norway.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        img6: file(relativePath: {eq: "images/new-zealand.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
