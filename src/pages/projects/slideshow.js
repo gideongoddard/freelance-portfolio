@@ -26,42 +26,42 @@ export const query = graphql`
         img1: file(relativePath: {eq: "images/greece.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         img2: file(relativePath: {eq: "images/italy.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         img3: file(relativePath: {eq: "images/germany.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         img4: file(relativePath: {eq: "images/france.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         img5: file(relativePath: {eq: "images/norway.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         img6: file(relativePath: {eq: "images/new-zealand.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
