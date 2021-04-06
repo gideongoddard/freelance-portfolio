@@ -11,6 +11,6 @@ collections:
     create: true
     fields:
       - { label: Title, name: title }
-      - { label: Date, name: date, widget: datetime }
+      - { label: Date, name: date, widget: datetime, date_format: DD.MM.YYYY, time_format: false }
       - { label: Featured Image, name: featuredimage, widget: image }
       - { label: Body, name: body, widget: markdown }
