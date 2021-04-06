@@ -7,10 +7,10 @@ public_folder: /assets
 collections:
   - label: Blog
     name: blog
-    folder: blog
+    folder: pages/blog
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { label: Title, name: title }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Featured Image, name: featuredimage, widget: image }
+      - { label: Body, name: body, widget: markdown }
