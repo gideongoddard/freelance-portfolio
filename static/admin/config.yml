@@ -5,13 +5,12 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - label: "Pages"
-    name: "pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "site/content/home.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Button text, name: button, widget: string}
+  - label: Blog
+    name: blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
