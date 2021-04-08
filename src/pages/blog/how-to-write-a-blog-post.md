@@ -1,8 +1,8 @@
 ---
 title: How to write a blog post
 date: 2021-04-06
-featuredImage: ../../../static/assets/person-on-pier.jpeg
-featuredimage: /assets/person-on-pier.jpeg
+featuredImage: /assets/person-on-pier.jpeg
+featuredImageAlt: Person sitting at the end of a pier in front of a lake
 ---
 This is the view I have right now. On my monitor, in my mind, but not in the real world.
 

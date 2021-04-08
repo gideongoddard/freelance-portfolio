@@ -25,6 +25,7 @@ export default class Blog extends React.Component {
                     <div style={{width: "90%", maxWidth: 800, margin: "auto"}}>
                         {articles.map(({ node }) => (
                             <div style={{backgroundColor: "white", padding: 24, marginBottom: 48, borderRadius: 10}} key={node.id}>
+                                <img src={node.frontmatter.featuredImage} alt={node.frontmatter.featuredImageAlt} style={{width: "100%"}} />
                                 <h3 style={{margin: "16px 0", color: "var(--accent-600"}}>{node.frontmatter.title}</h3>
                                 <p style={{fontSize: "var(--type-xxs)"}}>{node.excerpt}</p>
                                 <Link style={{fontSize: "var(--type-xs)"}} to={node.fields.slug}>Read article</Link>
@@ -60,6 +61,8 @@ export const articleListQuery = graphql`
                     frontmatter {
                         title
                         date(formatString: "DD MMMM YYYY")
+                        featuredImage
+                        featuredImageAlt
                     }
                     excerpt
                 }

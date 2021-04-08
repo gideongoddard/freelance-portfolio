@@ -10,6 +10,7 @@ export default function Article({ data }) {
             <div style={{width: "90%", maxWidth: 800, margin: "auto"}}>
                 <h1>{article.frontmatter.title}</h1>
                 <p style={{color: "var(--neutral-500)"}}>{article.frontmatter.date}</p>
+                <img src={article.frontmatter.featuredImage} alt={article.frontmatter.featuredImageAlt} />
                 <div dangerouslySetInnerHTML={{ __html: article.html }} />
             </div>
         </Layout>
@@ -23,6 +24,8 @@ export const query = graphql`
             frontmatter {
                 title
                 date(formatString: "DD MMMM YYYY")
+                featuredImage
+                featuredImageAlt
             }
         }
     }
