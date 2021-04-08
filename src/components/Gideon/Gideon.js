@@ -1,5 +1,5 @@
 import React from "react"
-import GideonStyles from "./Gideon.module.css"
+import * as GideonStyles from "./Gideon.module.css"
 
 export default function Gideon({ children }) {
     return (

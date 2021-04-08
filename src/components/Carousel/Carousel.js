@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import CarouselStyles from "./Carousel.module.css"
+import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
-import Img from "gatsby-image"
+import * as CarouselStyles from "./Carousel.module.css"
 
 export default function Carousel(props) {
 

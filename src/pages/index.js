@@ -1,13 +1,13 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
 import Form from "../components/Form/Form"
 import Gideon from "../components/Gideon/Gideon"
-import Layout from "../components/Layout/Layout"
 import ProjectSummary from "../components/ProjectSummary/ProjectSummary"
 import ServiceSummary from "../components/ServiceSummary/ServiceSummary"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Title from "../components/Title/Title"
-import Button from "../components/Button/Button"
 import MetaImage from "../images/meta-image.png"
 
 export default function Home() {

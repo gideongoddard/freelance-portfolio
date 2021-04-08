@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
-import Title from "../components/Title/Title"
-import AboutStyles from "./about.module.css"
-import Gideon from "../components/Gideon/Gideon"
-import Button from "../components/Button/Button"
 import { Helmet } from "react-helmet"
+import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
+import Gideon from "../components/Gideon/Gideon"
+import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
+import * as AboutStyles from "./about.module.css"
 
 const Client = props => (
     <div className={AboutStyles.client}>
@@ -51,7 +51,7 @@ export default function About() {
                     <p><strong>That understanding is why I can ensure that any solution I recommend will be tailored to match your goals.</strong></p>
                 </div>
             </section>
-            <section className={AboutStyles.clientSection}>
+            <section>
                 <div className={AboutStyles.container}>
                     <h3>Who I work with</h3>
                     <div className={AboutStyles.clientContainer}>

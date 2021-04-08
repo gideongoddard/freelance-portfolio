@@ -1,14 +1,14 @@
 import React from "react"
-import DesignSystemSection from "../components/DesignSystem/DesignSystemSection/DesignSystemSection"
-import Panels from "../components/DesignSystem/Panels/Panels"
-import Panel from "../components/DesignSystem/Panel/Panel"
-import DesignSystemStyles from "./design-system.module.css"
-import TypeScale from "../components/DesignSystem/TypeScale/TypeScale"
-import Button from "../components/Button/Button"
-import Title from "../components/Title/Title"
-import Layout from "../components/Layout/Layout"
 import { Helmet } from "react-helmet"
+import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
+import DesignSystemSection from "../components/DesignSystem/DesignSystemSection/DesignSystemSection"
+import Panel from "../components/DesignSystem/Panel/Panel"
+import Panels from "../components/DesignSystem/Panels/Panels"
+import Title from "../components/Title/Title"
+import TypeScale from "../components/DesignSystem/TypeScale/TypeScale"
 import MetaImage from "../images/meta-image.png"
+import * as DesignSystemStyles from "./design-system.module.css"
 
 export default function StyleGuide() {
     return (

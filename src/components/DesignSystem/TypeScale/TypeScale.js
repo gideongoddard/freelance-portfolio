@@ -1,5 +1,5 @@
 import React from "react"
-import TypeScaleStyles from "./TypeScale.module.css"
+import * as TypeScaleStyles from "./TypeScale.module.css"
 
 export default function TypeScale(props) {
     return (

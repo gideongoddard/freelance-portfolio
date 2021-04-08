@@ -1,13 +1,13 @@
 import React from "react"
-import ServicesStyles from "./services.module.css"
-import Layout from "../components/Layout/Layout"
-import Title from "../components/Title/Title"
-import Gideon from "../components/Gideon/Gideon"
-import Button from "../components/Button/Button"
 import { Helmet } from "react-helmet"
-import MetaImage from "../images/meta-image.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faRoute, faPaintBrush, faLaptopCode, faSearchPlus, faTools, faChartLine } from "@fortawesome/free-solid-svg-icons"
+import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
+import Gideon from "../components/Gideon/Gideon"
+import Title from "../components/Title/Title"
+import MetaImage from "../images/meta-image.png"
+import * as ServicesStyles from "./services.module.css"
 
 const Service = props => (
     <div className={ServicesStyles.service}>

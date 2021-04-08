@@ -1,5 +1,5 @@
 import React from "react"
-import TestimonialStyles from "./Testimonial.module.css"
+import * as TestimonialStyles from "./Testimonial.module.css"
 
 export default function Testimonial(props) {
     return (

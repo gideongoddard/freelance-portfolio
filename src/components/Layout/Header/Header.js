@@ -1,8 +1,7 @@
 import React, { useState } from "react"
-import HeaderStyles from "./Header.module.css"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-
+import * as HeaderStyles from "./Header.module.css"
 
 export default function Header() {
     const [navOpen, setNavOpen] = useState(false)

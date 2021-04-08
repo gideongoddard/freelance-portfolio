@@ -1,6 +1,6 @@
 import React from "react"
-import TitleStyles from "./Title.module.css"
 import Button from "../Button/Button"
+import * as TitleStyles from "./Title.module.css"
 
 export default function Title(props) {
     return (

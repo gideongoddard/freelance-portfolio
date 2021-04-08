@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import { Helmet } from "react-helmet"
-import PNFStyles from "./404.module.css"
+import Layout from "../components/Layout/Layout"
+import * as PNFStyles from "./404.module.css"
 
 export default function PageNotFound() {
     return (

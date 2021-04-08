@@ -1,5 +1,5 @@
 import React from "react"
-import SectionStyles from "./DesignSystemSection.module.css"
+import * as SectionStyles from "./DesignSystemSection.module.css"
 
 export default function DesignSystemSection(props) {
     return (

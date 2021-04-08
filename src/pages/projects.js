@@ -1,12 +1,12 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
-import Title from "../components/Title/Title"
-import ProjectsStyles from "./projects.module.css"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Button from "../components/Button/Button"
 import { Helmet } from "react-helmet"
+import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
+import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
+import * as ProjectsStyles from "./projects.module.css"
 
 const Project = props => (
     <div className={ProjectsStyles.project}>
@@ -15,7 +15,7 @@ const Project = props => (
                 <Img fluid={props.imgSrc} alt={props.imgAlt} className={ProjectsStyles.projectImg} />
             </a>
         </div>
-        <div className={ProjectsStyles.txtCol}>
+        <div>
             <a href={props.href} target="_blank" rel="noopener noreferrer">
                 <h2>{props.name}</h2>
             </a>

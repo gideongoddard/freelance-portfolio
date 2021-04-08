@@ -1,11 +1,11 @@
 import React from "react"
-import HMStyles from "./hire-me.module.css"
-import Layout from "../components/Layout/Layout"
-import Title from "../components/Title/Title"
-import Form from "../components/Form/Form"
-import Button from "../components/Button/Button"
 import { Helmet } from "react-helmet"
+import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
+import Form from "../components/Form/Form"
+import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
+import * as HMStyles from "./hire-me.module.css"
 
 export default function HireMe() {
     return (
@@ -36,7 +36,7 @@ export default function HireMe() {
             </Title>
             <section className={HMStyles.section}>
                 <div className={HMStyles.container}>
-                    <div className={HMStyles.intro}>
+                    <div>
                         <h2>Schedule a call</h2>
                         <p>You can arrange an introductory phone call for you to find out a bit more about me and for me to find out more about how I can help you.</p>
                     </div>

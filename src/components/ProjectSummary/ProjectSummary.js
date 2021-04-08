@@ -1,8 +1,8 @@
 import React from "react"
-import PSStyles from "./ProjectSummary.module.css"
-import Button from "../Button/Button"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Button from "../Button/Button"
+import * as PSStyles from "./ProjectSummary.module.css"
 
 const Project = props => (
     <div className={PSStyles.project}>

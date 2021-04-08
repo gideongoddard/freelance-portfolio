@@ -1,8 +1,8 @@
 import React from "react"
-import SuccessStyles from "./success.module.css"
-import Button from "../components/Button/Button"
 import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
+import * as SuccessStyles from "./success.module.css"
 
 export default function Success() {
     return (

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import ButtonStyles from "./Button.module.css"
+import * as ButtonStyles from "./Button.module.css"
 
 export default function Button(props) {
     return (

@@ -36,6 +36,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/static/assets`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `content`,
         path: `${__dirname}/site/content`,
       },
@@ -46,11 +52,24 @@ module.exports = {
         exclude: [`/success`],
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
     `gatsby-plugin-fontawesome-css`,
   ],

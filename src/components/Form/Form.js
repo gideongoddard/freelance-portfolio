@@ -1,9 +1,9 @@
 import React from "react"
-import FormStyles from "./Form.module.css"
+import * as FormStyles from "./Form.module.css"
 
 export default function Form(props) {
     return (
-        <section className={FormStyles.section} id="contact">
+        <section>
             <div className={FormStyles.container}>
                 <h2>{props.heading}</h2>
                 <p>{props.intro}</p>

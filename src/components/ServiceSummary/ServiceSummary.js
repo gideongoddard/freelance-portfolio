@@ -1,8 +1,8 @@
 import React from "react"
-import SSStyles from "./ServiceSummary.module.css"
-import Button from "../Button/Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faRoute, faPaintBrush, faLaptopCode, faSearchPlus, faTools, faChartLine } from "@fortawesome/free-solid-svg-icons"
+import Button from "../Button/Button"
+import * as SSStyles from "./ServiceSummary.module.css"
 
 const Service = props => (
     <div className={SSStyles.service}>
