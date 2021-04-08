@@ -16,6 +16,8 @@ This is the view I have right now. On my monitor, in my mind, but not in the rea
 * This is the second item
 * It's behaving weirdly
 
+
+
 1. Numbered lists are also a thing
 2. They have the same strange behaviour
 3. I have at least figured it out though
