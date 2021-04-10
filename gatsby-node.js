@@ -41,7 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
     const articles = result.data.allMarkdownRemark.edges
-    const articlesPerPage = 9
+    const articlesPerPage = 12
     const numPages = Math.ceil(articles.length / articlesPerPage)
     Array.from({ length: numPages }).forEach((_, i) => {
         createPage({

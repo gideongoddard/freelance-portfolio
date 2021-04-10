@@ -1,0 +1,13 @@
+.section {
+    background: linear-gradient(180deg, var(--primary-200), white 90%);
+}
+
+.container {
+    width: 90%;
+    /* TEMPORARY */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-gap: 48px;
+    justify-content: center;
+}

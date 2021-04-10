@@ -2,7 +2,9 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/Layout"
+import Card from "../components/Card/Card"
 import Title from "../components/Title/Title"
+import * as ListingStyles from "./article-listing.module.css"
 
 export default class Blog extends React.Component {
     render() {
@@ -21,15 +23,18 @@ export default class Blog extends React.Component {
                     <h1>Blog</h1>
                     <h2>Insights, tips, advice and the occasional musing.</h2>
                 </Title>
-                <section style={{backgroundColor: "var(--neutral-200)"}}>
-                    <div style={{width: "90%", maxWidth: 800, margin: "auto"}}>
+                <section className={ListingStyles.section}>
+                    <div className={ListingStyles.container}>
                         {articles.map(({ node }) => (
-                            <div style={{backgroundColor: "white", padding: 24, marginBottom: 48, borderRadius: 10}} key={node.id}>
-                                <img src={node.frontmatter.featuredImage} alt={node.frontmatter.featuredImageAlt} style={{width: "100%"}} />
-                                <h3 style={{margin: "16px 0", color: "var(--accent-600"}}>{node.frontmatter.title}</h3>
-                                <p style={{fontSize: "var(--type-xxs)"}}>{node.excerpt}</p>
-                                <Link style={{fontSize: "var(--type-xs)"}} to={node.fields.slug}>Read article</Link>
-                            </div>
+                            <Card
+                                key={node.id}
+                                imgSrc={node.frontmatter.featuredImage}
+                                imgAlt={node.frontmatter.featuredImageAlt}
+                                heading={node.frontmatter.title}
+                                excerpt={node.excerpt}
+                                linkTo={node.fields.slug}
+                                linkText="Read article"
+                            />
                         ))}
                     </div>
                 </section>

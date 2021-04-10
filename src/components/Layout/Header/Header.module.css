@@ -118,7 +118,7 @@
 }
 
 .nav a:hover {
-    color: var(--accent-500);
+    color: var(--primary-700);
     text-decoration: none;
 }
 

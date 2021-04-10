@@ -1,0 +1,9 @@
+.articleBody {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.articleBody img {
+    max-width: 100%;
+}
