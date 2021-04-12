@@ -109,7 +109,8 @@ section {
 code {
     font-family: monospace;
     background-color: var(--neutral-100);
-    padding: 8px 12px;
+    padding: 0 8px;
+    font-size: var(--type-xxs);
 }
 
 blockquote {
