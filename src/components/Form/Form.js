@@ -1,7 +1,8 @@
 import React from "react"
+import PropTypes from "prop-types"
 import * as FormStyles from "./Form.module.css"
 
-export default function Form(props) {
+function Form(props) {
     return (
         <section>
             <div className={FormStyles.container}>
@@ -22,3 +23,10 @@ export default function Form(props) {
         </section>
     )
 }
+
+Form.propTypes = {
+    heading: PropTypes.string,
+    intro: PropTypes.string,
+}
+
+export default Form

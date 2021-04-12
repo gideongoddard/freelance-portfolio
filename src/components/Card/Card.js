@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 import * as CardStyles from "./Card.module.css"
 
-export default function Card(props) {
+function Card(props) {
     return (
         <div className={CardStyles.card}>
             <div className={CardStyles.imgContainer}>
@@ -18,3 +19,14 @@ export default function Card(props) {
         </div>
     )
 }
+
+Card.propTypes = {
+    imgSrc: PropTypes.string.isRequired,
+    imgAlt: PropTypes.string.isRequired,
+    heading: PropTypes.string.isRequired,
+    excerpt: PropTypes.string.isRequired,
+    linkTo: PropTypes.string.isRequired,
+    linkText: PropTypes.string.isRequired,
+}
+
+export default Card

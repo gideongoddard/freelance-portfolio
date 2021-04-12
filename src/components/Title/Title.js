@@ -1,8 +1,9 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Button from "../Button/Button"
 import * as TitleStyles from "./Title.module.css"
 
-export default function Title(props) {
+function Title(props) {
     return (
         <section className={TitleStyles.section}>
             <div className={TitleStyles.container}>
@@ -16,3 +17,13 @@ export default function Title(props) {
         </section>
     )
 }
+
+Title.propTypes = {
+    button: PropTypes.bool,
+    buttonType: PropTypes.string,
+    buttonColour: PropTypes.string,
+    buttonTo: PropTypes.string,
+    buttonText: PropTypes.string,
+}
+
+export default Title

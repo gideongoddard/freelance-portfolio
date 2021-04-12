@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faRoute, faPaintBrush, faLaptopCode, faSearchPlus, faTools, faChartLine } from "@fortawesome/free-solid-svg-icons"
 import Button from "../Button/Button"
@@ -11,6 +12,12 @@ const Service = props => (
         <p>{props.description}</p>
     </div>
 )
+
+Service.propTypes = {
+    icon: PropTypes.object.isRequired,
+    heading: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+}
 
 export default function ServiceSummary() {
     return (

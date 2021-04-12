@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 import * as ButtonStyles from "./Button.module.css"
 
-export default function Button(props) {
+function Button(props) {
     return (
         <>
         {
@@ -15,3 +16,12 @@ export default function Button(props) {
         </>
     )
 }
+
+Button.propTypes = {
+    type: PropTypes.string.isRequired,
+    colour: PropTypes.string.isRequired,
+    href: PropTypes.string,
+    to: PropTypes.string,
+}
+
+export default Button

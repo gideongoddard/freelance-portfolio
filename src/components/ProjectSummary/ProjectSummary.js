@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import PropTypes from "prop-types"
 import Button from "../Button/Button"
 import * as PSStyles from "./ProjectSummary.module.css"
 
@@ -14,6 +15,13 @@ const Project = props => (
         </a>
     </div>
 )
+
+Project.propTypes = {
+    href: PropTypes.string.isRequired,
+    imgSrc: PropTypes.object.isRequired,
+    imgAlt: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+}
 
 export default function ProjectSummary() {
     return (
