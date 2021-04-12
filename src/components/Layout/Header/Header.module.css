@@ -3,8 +3,7 @@
 }
 
 .navContainer {
-    width: 100%;
-    max-width: 1200px;
+    width: min(100%, 1200px);
     margin: auto;
     display: grid;
     grid-template-columns: 70px 1fr 70px;

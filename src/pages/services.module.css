@@ -4,8 +4,7 @@
 }
 
 .serviceContainer {
-    width: 90%;
-    max-width: 1600px;
+    width: min(90%, 1600px);
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;

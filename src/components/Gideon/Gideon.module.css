@@ -3,14 +3,12 @@
 }
 
 .container {
-    width: 100%;
-    max-width: 1000px;
+    width: min(100%, 1000px);
     margin: auto;
 }
 
 .surround {
     background-color: var(--primary-100);
-    width: 100%;
     padding: 16px;
     background-image: url('../../images/gideon.png');
     background-position: top;
@@ -37,7 +35,7 @@
 
 @media only screen and (min-width: 700px) {
     .container {
-        width: 90%;
+        width: min(90%, 1000px);
     }
 
     .surround {

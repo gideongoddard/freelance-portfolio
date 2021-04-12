@@ -1,6 +1,5 @@
 .articleBody {
-    width: 90%;
-    max-width: 800px;
+    width: min(90%, 800px);
     margin: auto;
 }
 

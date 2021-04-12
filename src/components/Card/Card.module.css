@@ -3,9 +3,8 @@
     padding: 24px 24px 24px 24px;
     border-radius: 10px;
     box-shadow: var(--shadow-m);
-    max-width: 800px;
     height: 100%;
-    width: 100%;
+    width: min(100%, 800px);
     margin: auto;
 }
 

@@ -1,12 +1,12 @@
 :root {
     /* Type scale */
-    --type-xxs: calc(14px + 0.1vw);
-    --type-xs: calc(16px + 0.2vw);
-    --type-s: calc(18px + 0.5vw);
-    --type-m: calc(20px + 0.75vw);
-    --type-l: calc(22px + 1vw);
-    --type-xl: calc(24px + 1.25vw);
-    --type-xxl: calc(32px + 1.8vw);
+    --type-xxs: clamp(14px, 1.75vw, 18px);
+    --type-xs: clamp(16px, 2vw, 20px);
+    --type-s: clamp(18px, 2.5vw, 24px);
+    --type-m: clamp(20px, 3vw, 30px);
+    --type-l: clamp(24px, 4vw, 36px);
+    --type-xl: clamp(30px, 5vw, 48px);
+    --type-xxl: clamp(36px, 6vw, 60px);
 
     /* Colour palette */
     /* Primary */

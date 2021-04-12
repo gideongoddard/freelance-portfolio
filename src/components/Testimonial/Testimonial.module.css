@@ -11,9 +11,8 @@
 }
 
 .container {
-    width: 90%;
+    width: min(90%, 800px);
     margin: 0 auto 48px auto;
-    max-width: 800px;
     background-color: hsla(0, 0%, 100%, .1);
     padding: 24px;
     border-radius: 10px;

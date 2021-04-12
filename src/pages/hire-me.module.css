@@ -7,8 +7,7 @@
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
+    width: min(90%, 1000px);
     margin: auto;
     padding: 24px;
     background-color: hsla(0, 0%, 100%, 0.8);

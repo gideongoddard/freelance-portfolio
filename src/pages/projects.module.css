@@ -3,8 +3,7 @@
 }
 
 .projectsContainer {
-    width: 90%;
-    max-width: 1200px;
+    width: min(90%, 1200px);
     margin: auto;
 }
 
@@ -49,8 +48,7 @@
 }
 
 .callout {
-    width: 90%;
-    max-width: 800px;
+    width: min(90%, 800px);
     margin: 0 auto 24px auto;
     background: linear-gradient(90deg, var(--primary-900) 20%, var(--primary-600) 90%);
     color: white;

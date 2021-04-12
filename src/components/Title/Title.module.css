@@ -4,8 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    max-width: 1000px;
+    width: min(90%, 1000px);
     margin: auto;
     text-align: center;
     padding: 8px 0;
