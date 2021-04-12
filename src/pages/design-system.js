@@ -39,7 +39,7 @@ export default function StyleGuide() {
           </Title>
           <DesignSystemSection
             heading="Type scale"
-            description="The type scale consists of 7 font sizes, each of which is a calculation combining 'px' and 'vw' units. Larger sizes scale up and down more than smaller sizes."
+            description="The type scale consists of 7 font sizes, each of which is a calculation using the clamp() function. Larger sizes scale up and down more than smaller sizes."
           >
             <TypeScale addedClass={DesignSystemStyles.xxl} />
             <TypeScale addedClass={DesignSystemStyles.xl} />
