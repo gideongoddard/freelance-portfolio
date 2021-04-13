@@ -11,7 +11,7 @@ import * as ServicesStyles from "./services.module.css"
 
 const Service = props => (
     <div className={ServicesStyles.service}>
-        <span className={ServicesStyles.icon}><FontAwesomeIcon icon={props.icon} style={{fontSize: "var(--type-s"}} /></span>
+        <span className={ServicesStyles.icon}><FontAwesomeIcon icon={props.icon} style={{fontSize: 24}} /></span>
         <h3>{props.heading}</h3>
         {props.children}
     </div>
