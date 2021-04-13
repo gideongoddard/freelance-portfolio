@@ -5,6 +5,7 @@
 
 .container h2 {
     text-align: center;
+    color: var(--primary-800);
 }
 
 .form {

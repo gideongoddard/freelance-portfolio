@@ -117,7 +117,7 @@
 }
 
 .nav a:hover {
-    color: var(--primary-700);
+    color: var(--primary-500);
     text-decoration: none;
 }
 

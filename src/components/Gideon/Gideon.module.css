@@ -8,7 +8,7 @@
 }
 
 .surround {
-    background-color: var(--primary-100);
+    background-color: var(--accent-400);
     padding: 16px;
     background-image: url('../../images/gideon.png');
     background-position: top;
@@ -24,12 +24,11 @@
 }
 
 .contentBox h3 {
-    color: var(--primary-900);
+    color: var(--primary-700);
     margin: 24px 0;
 }
 
 .contentBox p {
-    color: var(--primary-700);
     margin: 24px 0;
 }
 

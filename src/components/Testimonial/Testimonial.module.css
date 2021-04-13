@@ -1,21 +1,22 @@
 .section {
     width: 100%;
-    background-color: var(--primary-600);
-    color: white;
+    background-color: var(--primary-700);
 }
 
 .section h2 {
     text-align: center;
     width: 75%;
     margin: 16px auto 32px auto;
+    color: white;
 }
 
 .container {
     width: min(90%, 800px);
     margin: 0 auto 48px auto;
-    background-color: hsla(0, 0%, 100%, .1);
+    background-color: white;
     padding: 24px;
     border-radius: 10px;
+    box-shadow: var(--shadow-s);
 }
 
 .quote:before {

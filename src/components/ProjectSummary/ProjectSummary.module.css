@@ -1,6 +1,7 @@
 .section h2 {
     text-align: center;
     margin: 24px 0 12px 0;
+    color: var(--primary-800);
 }
 
 .section p {
