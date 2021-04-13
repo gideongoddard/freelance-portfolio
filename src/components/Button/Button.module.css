@@ -24,11 +24,11 @@
 }
 
 .accent {
-    background-color: var(--accent-500);
+    background-color: var(--accent-600);
 }
 
 .accent:hover {
-    background-color: var(--accent-400);
+    background-color: var(--accent-500);
     box-shadow: var(--shadow-s);
     transform: translateY(-1px);
     text-decoration: none;

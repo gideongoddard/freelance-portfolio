@@ -7,7 +7,7 @@ import * as SSStyles from "./ServiceSummary.module.css"
 
 const Service = props => (
     <div className={SSStyles.service}>
-        <span className={SSStyles.icon}><FontAwesomeIcon icon={props.icon} style={{fontSize: "var(--type-s"}} /></span>
+        <span className={SSStyles.icon}><FontAwesomeIcon icon={props.icon} style={{fontSize: 24}} /></span>
         <h3>{props.heading}</h3>
         <p>{props.description}</p>
     </div>
@@ -23,7 +23,7 @@ export default function ServiceSummary() {
     return (
         <section className={SSStyles.section}>
             <div className="container">
-                <h2>What goes into creating outstanding websites</h2>
+                <h2>What goes into creating <span className="accent">outstanding</span> websites</h2>
                 <div className={SSStyles.serviceContainer}>
                     <Service
                         icon={faRoute}

@@ -36,7 +36,7 @@
 }
 
 .item {
-    background-color: var(--primary-100);
+    background-color: var(--primary-200);
     color: var(--primary-900);
     font-weight: 600;
     padding: 10px;

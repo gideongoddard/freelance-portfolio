@@ -15,7 +15,7 @@ export default function Header() {
                             query {
                                 file(relativePath: {eq: "images/logo.png"}) {
                                     childImageSharp {
-                                        fixed(width: 80, quality: 72) {
+                                        fixed(width: 180, quality: 72) {
                                             ...GatsbyImageSharpFixed_noBase64
                                         }
                                     }
@@ -31,11 +31,11 @@ export default function Header() {
                     <div className={navOpen ? `${HeaderStyles.hamburgerOpen}` : `${HeaderStyles.hamburger}`}></div>
                 </div>
                 <nav className={HeaderStyles.nav} style={{right: navOpen ? "0" : "-100%"}}>
-                    <Link activeStyle={{color: "var(--primary-600)"}} to="/">Home</Link>
-                    <Link activeStyle={{color: "var(--primary-600)"}} to="/services/">Services</Link>
-                    <Link activeStyle={{color: "var(--primary-600)"}} to="/projects/">Projects</Link>
-                    <Link activeStyle={{color: "var(--primary-600)"}} to="/about/">About</Link>
-                    <Link activeStyle={{color: "var(--primary-600)"}} to="/hire-me/">Hire me</Link>
+                    <Link activeStyle={{color: "var(--primary-700)"}} to="/">Home</Link>
+                    <Link activeStyle={{color: "var(--primary-700)"}} to="/services/">Services</Link>
+                    <Link activeStyle={{color: "var(--primary-700)"}} to="/projects/">Projects</Link>
+                    <Link activeStyle={{color: "var(--primary-700)"}} to="/about/">About</Link>
+                    <Link activeStyle={{color: "var(--primary-700)"}} to="/hire-me/">Hire me</Link>
                 </nav>
             </div>
         </header>

@@ -24,12 +24,11 @@
 }
 
 .contentBox h3 {
-    color: var(--primary-900);
+    color: var(--primary-700);
     margin: 24px 0;
 }
 
 .contentBox p {
-    color: var(--primary-700);
     margin: 24px 0;
 }
 
