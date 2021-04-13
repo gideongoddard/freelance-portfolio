@@ -37,7 +37,7 @@ export default function HireMe() {
             <section className={HMStyles.section}>
                 <div className={HMStyles.container}>
                     <div>
-                        <h2>Schedule an <span className="accent">introductory</span> call</h2>
+                        <h2>Schedule a call</h2>
                         <p>You can arrange an introductory phone call for you to find out a bit more about me and for me to find out more about how I can help you.</p>
                     </div>
                     <div className={HMStyles.detail}>
