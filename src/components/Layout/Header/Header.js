@@ -15,7 +15,7 @@ export default function Header() {
                             query {
                                 file(relativePath: {eq: "images/logo.png"}) {
                                     childImageSharp {
-                                        fixed(width: 200, quality: 72) {
+                                        fixed(width: 180, quality: 72) {
                                             ...GatsbyImageSharpFixed_noBase64
                                         }
                                     }
