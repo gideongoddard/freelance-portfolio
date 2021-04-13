@@ -22,8 +22,18 @@ In recent years, CSS has seen *Flexbox* and *Grid* change the landscape a little
 
 What *clamp()* does is to take 3 values - a minimum, an ideal and a maximum. When the minimum and maximum values are absolute values and the ideal is a responsive value - such as `font-size: clamp(18px, 2.5vw, 24px)` - you get the responsive font scaling you want, but with an upper and lower bound that prevent the issues you get when using *calc()*.
 
-Creating a type scale that gives your website a range of font sizes using this technique ensures that you'll always be have text that scales nicely for different screen widths but that it'll never be too small to read or too big to sit comfortably on the page.
+Creating a type scale that gives your website a range of font sizes using this technique ensures that you'll always be have text that scales nicely for different screen widths but that it'll never be too small to read or too big to sit comfortably on the page. To make sure this works really well, set your bigger font sizes to scale up and down more than your smaller ones.
 
-Here's an example of the type scale for this website:
+### Take a look at the type scale for this website
 
-![Example type scale](/assets/type-scale.png)
+Firstly, the CSS variables:
+
+![CSS variables for example type scale](/assets/type-scale-code.png)
+
+What this looks like on a desktop screen:
+
+![Example type scale on desktop](/assets/type-scale.png)
+
+What it looks like on a mobile screen:
+
+![Example type scale on mobile](/assets/screenshot-2021-04-13-at-10.15.48.png)
