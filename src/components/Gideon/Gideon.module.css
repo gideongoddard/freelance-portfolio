@@ -8,7 +8,7 @@
 }
 
 .surround {
-    background-color: var(--accent-400);
+    background-color: var(--primary-100);
     padding: 16px;
     background-image: url('../../images/gideon.png');
     background-position: top;
