@@ -1,6 +1,6 @@
 .section {
     width: 100%;
-    background-color: var(--primary-700);
+    background-color: var(--primary-500);
 }
 
 .section h2 {
@@ -13,7 +13,8 @@
 .container {
     width: min(90%, 800px);
     margin: 0 auto 48px auto;
-    background-color: white;
+    background-color: var(--primary-200);
+    color: var(--primary-900);
     padding: 24px;
     border-radius: 10px;
     box-shadow: var(--shadow-s);
