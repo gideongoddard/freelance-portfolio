@@ -1,23 +1,23 @@
 .section {
     width: 100%;
-    background-color: var(--primary-500);
+    background-color: var(--primary-200);
 }
 
 .section h2 {
     text-align: center;
     width: 75%;
     margin: 16px auto 32px auto;
-    color: white;
+    color: var(--primary-800);
 }
 
 .container {
     width: min(90%, 800px);
     margin: 0 auto 48px auto;
-    background-color: var(--primary-200);
+    background-color: white;
     color: var(--primary-900);
     padding: 24px;
-    border-radius: 10px;
     box-shadow: var(--shadow-s);
+    border-top: 8px solid var(--accent-500);
 }
 
 .quote:before {
@@ -42,11 +42,13 @@
 .quote p {
     padding: 0 16px;
     font-size: var(--type-xs);
+    font-weight: 600;
 }
 
 .client p {
     text-align: right;
     font-size: var(--type-xs);
+    font-weight: 300;
 }
 
 @media only screen and (min-width: 700px) {
