@@ -25,7 +25,9 @@ export default function Article({ data }) {
                 <meta name="twitter:url" content={`https://gideongoddard.co.uk${article.fields.slug}`} />
                 <meta name="twitter:title" content={`${article.frontmatter.title} | Gideon Goddard, Web Developer`} />
                 <meta name="twitter:description" content={article.excerpt} />
-                <meta name="twitter:image" content={article.frontmatter.featuredImage} />
+                <meta name="twitter:site" content="@gidgod" />
+                <meta name="twitter:image" content={`https://gideongoddard.co.uk${article.frontmatter.featuredImage}`} />
+                <meta name="twitter:creator" content="@gidgod" />
 
                 <html lang="en"></html>
             </Helmet>
