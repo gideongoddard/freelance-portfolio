@@ -75,17 +75,17 @@ h3 {
 
 h4 {
     font-size: var(--type-m);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h5 {
     font-size: var(--type-m);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h6 {
     font-size: var(--type-s);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p, li {
