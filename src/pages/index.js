@@ -11,9 +11,7 @@ import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
 import { graphql } from "gatsby"
 
-export default function Home({ data }) {
-  const logo = data.logo.childImageSharp.fluid
-  
+export default function Home() {  
   return (
     <Layout>
       <Helmet>
@@ -42,7 +40,7 @@ export default function Home({ data }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Gideon Goddard Digital",
-              "image": ${logo},
+              "image": "",
               "@id": "",
               "url": "https://gideongoddard.co.uk",
               "telephone": "",
@@ -93,15 +91,3 @@ export default function Home({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    logo: file(relativePath: {eq: "images/logo.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 700, quality: 72) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
