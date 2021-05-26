@@ -9,8 +9,11 @@ import ServiceSummary from "../components/ServiceSummary/ServiceSummary"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
+import { graphql } from "gatsby"
 
-export default function Home() {
+export default function Home({ data }) {
+  const logo = data.logo.childImageSharp.fluid
+  
   return (
     <Layout>
       <Helmet>
@@ -32,6 +35,39 @@ export default function Home() {
         <meta name="twitter:image" content={MetaImage} />
 
         <html lang="en"></html>
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Gideon Goddard Digital",
+              "image": ${logo},
+              "@id": "",
+              "url": "https://gideongoddard.co.uk",
+              "telephone": "",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "32 Garfield Park, Great Glen",
+                "addressLocality": "Leicester",
+                "postalCode": "LE8 9JY",
+                "addressCountry": "GB"
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "21:00"
+              } 
+            }
+          `}
+        </script>
       </Helmet>
       <Title
         button={true}
@@ -57,3 +93,15 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    logo: file(relativePath: {eq: "images/logo.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 700, quality: 72) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
