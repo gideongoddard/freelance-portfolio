@@ -9,7 +9,6 @@ import ServiceSummary from "../components/ServiceSummary/ServiceSummary"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
-import { graphql } from "gatsby"
 
 export default function Home() {  
   return (
@@ -40,7 +39,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Gideon Goddard Digital",
-              "image": "",
+              "image": "https://gideongoddard.co.uk/static/1454275122a69e490bddaa66430a4f88/a7dc7/logo.png",
               "@id": "",
               "url": "https://gideongoddard.co.uk",
               "telephone": "",
