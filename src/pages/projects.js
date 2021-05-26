@@ -55,6 +55,13 @@ export default function Projects() {
                 <StaticQuery
                         query={graphql`
                             query {
+                                paulaAbbey: file(relativePath: {eq: "images/paula-abbey.png"}) {
+                                    childImageSharp {
+                                        fluid(maxWidth: 810, quality: 72) {
+                                            ...GatsbyImageSharpFluid
+                                        }
+                                    }
+                                }
                                 kibworthOsteopaths: file(relativePath: {eq: "images/kibworthosteopaths.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 810, quality: 72) {
@@ -80,6 +87,15 @@ export default function Projects() {
                         `}
                         render={data => (
                             <>
+                            <Project
+                                name="Paula Abbey Counselling & Psychotherapy"
+                                href="https://paulaabbey.co.uk"
+                                imgSrc={data.paulaAbbey.childImageSharp.fluid}
+                                imgAlt="Paula Abbey Counselling & Psychotherapy website"
+                            >
+                                <p>This project was the launch of a brand new website for a new counselling & psychotherapy practice. The primary goal was to maximise enquiries from prospective clients.</p>
+                                <p>We used nature and lanscape imagery to create a calming vibe, whilst also aiming to ensure that visitors to the site feel comfortable with Paula as well as confident in her expertise.</p>
+                            </Project>
                             <Project
                                 name="Kibworth Osteopaths & Pilates"
                                 href="https://kibworthosteopaths.co.uk"

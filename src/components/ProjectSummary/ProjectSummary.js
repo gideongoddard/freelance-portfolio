@@ -47,7 +47,7 @@ export default function ProjectSummary() {
                                         }
                                     }
                                 }
-                                taxCalculator: file(relativePath: {eq: "images/tax-calc-results.png"}) {
+                                paulaabbey: file(relativePath: {eq: "images/paula-abbey.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 900, quality: 72) {
                                             ...GatsbyImageSharpFluid
@@ -59,6 +59,12 @@ export default function ProjectSummary() {
                         render={data => (
                             <>
                             <Project
+                                name="Paula Abbey Counselling & Psychotherapy"
+                                href="https://paulaabbey.co.uk"
+                                imgSrc={data.paulaabbey.childImageSharp.fluid}
+                                imgAlt="Paula Abbey Counselling & Psychotherapy website"
+                            />
+                            <Project
                                 name="Kibworth Osteopaths & Pilates"
                                 href="https://kibworthosteopaths.co.uk"
                                 imgSrc={data.kibworthOsteopaths.childImageSharp.fluid}
@@ -69,12 +75,6 @@ export default function ProjectSummary() {
                                 href="https://caplinsolar.co.uk"
                                 imgSrc={data.caplinSolar.childImageSharp.fluid}
                                 imgAlt="Caplin Solar website"
-                            />
-                            <Project
-                                name="Income Tax Calculator"
-                                href="https://gideongoddard.github.io/tax-calculator"
-                                imgSrc={data.taxCalculator.childImageSharp.fluid}
-                                imgAlt="Income Tax Calculator website"
                             />
                             </>
                         )}
