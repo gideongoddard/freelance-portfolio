@@ -42,7 +42,8 @@ export default function Home() {
               "image": "https://gideongoddard.co.uk/static/1454275122a69e490bddaa66430a4f88/a7dc7/logo.png",
               "@id": "",
               "url": "https://gideongoddard.co.uk",
-              "telephone": "",
+              "telephone": "07540937646",
+              "priceRange": "£300 - £5000",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "32 Garfield Park, Great Glen",
