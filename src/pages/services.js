@@ -5,6 +5,7 @@ import { faRoute, faPaintBrush, faLaptopCode, faSearchPlus, faTools, faChartLine
 import Layout from "../components/Layout/Layout"
 import Button from "../components/Button/Button"
 import Gideon from "../components/Gideon/Gideon"
+import Testimonial from "../components/Testimonial/Testimonial"
 import Title from "../components/Title/Title"
 import MetaImage from "../images/meta-image.png"
 import * as ServicesStyles from "./services.module.css"
@@ -72,6 +73,10 @@ export default function Services() {
                     </Service>
                 </div>
             </section>
+            <Testimonial client="Paula Abbey, Paula Abbey Counselling & Psychotherapy">
+                <p>Gideon took the time to find out exactly what it was that I was looking for, even though I was often unsure myself! Throughout the process, I have been involved and kept well informed of progress.</p>
+                <p>Gideon is incredibly patient and makes it easy for me to ask ‘stupid’ questions. I would recommend Gideon’s services to anyone, especially those who are somewhat of a technophobe!</p>
+            </Testimonial>
             <Gideon>
                 <p>My background of over a decade of working on web projects for growing small businesses and some of the world's biggest brands - plus much in between - gives me the expertise to not only create you a website, but to make sure we create you the <em>right</em> website to deliver results for your business.</p>
                 <Button colour="primary" type="internal" to="/hire-me/">Let's get started</Button>

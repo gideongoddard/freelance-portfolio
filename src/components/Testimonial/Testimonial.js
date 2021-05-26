@@ -8,7 +8,7 @@ function Testimonial(props) {
             <h2>Don't just take my word for it...</h2>
             <div className={TestimonialStyles.container}>
                 <div className={TestimonialStyles.quote}>
-                    <p>{props.quote}</p>
+                    {props.children}
                 </div>
                 <div className={TestimonialStyles.client}>
                     <p>- {props.client}</p>
@@ -19,7 +19,7 @@ function Testimonial(props) {
 }
 
 Testimonial.propTypes = {
-    quote: PropTypes.string.isRequired,
+    children: PropTypes.any.isRequired,
     client: PropTypes.string.isRequired,
 }
 
