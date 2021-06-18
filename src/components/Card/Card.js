@@ -12,7 +12,9 @@ function Card(props) {
                 </Link>
             </div>
             <div className={CardStyles.txtContainer}>
-                <h3>{props.heading}</h3>
+                <Link to={props.linkTo}>
+                    <h3>{props.heading}</h3>
+                </Link>
                 <p>{props.excerpt}</p>
                 <Link to={props.linkTo}>{props.linkText}</Link>
             </div>

@@ -1,6 +1,7 @@
 .articleBody {
     width: min(90%, 800px);
     margin: auto;
+    padding-bottom: 48px;
 }
 
 .articleBody img {
