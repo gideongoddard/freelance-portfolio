@@ -63,6 +63,6 @@ So you don't forget, let's say that one more time...
 
 ## What about "responsive images"?
 
-If you're using <img srcset> then you're fine. All you need to do is add a width and height from one of the images.
+If you're using *srcset* then you're fine. All you need to do is add a width and height from one of the images.
 
-If you're using the <picture> element with multiple images via the <source> element that intentionally have different aspect ratios, then there isn't a solution ready yet. The current plan is to add width and height attributes to the <source> element...but it's not there yet.
+If you're using the *picture* element with multiple images via the *source* element that intentionally have different aspect ratios, then there isn't a solution ready yet. The current plan is to add width and height attributes to the <source> element...but it's not there yet.
