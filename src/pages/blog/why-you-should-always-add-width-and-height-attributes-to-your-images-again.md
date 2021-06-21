@@ -39,7 +39,7 @@ That's not the right question.
 The question is how many pixels the actual width and height of the original image are. That's what you need to add...like so:
 
 ```html
-<img src="./my-face.jpg" alt="My face" width="900" height="600" />
+<img width="900" height="600" src="./my-face.jpg" alt="My face" />
 ```
 
 ## OK, but...what about responsiveness?
