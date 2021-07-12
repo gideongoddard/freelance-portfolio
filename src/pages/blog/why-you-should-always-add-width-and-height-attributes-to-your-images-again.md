@@ -1,5 +1,5 @@
 ---
-title: Why you should always add width and height attributes to your images (again)
+title: Why you should always add width & height attributes to images (again)
 date: 2021-06-18T11:59:34.524Z
 featuredImage: /assets/laptop-screen.jpg
 featuredImageAlt: A man's hand gestures in front of a laptop screen
