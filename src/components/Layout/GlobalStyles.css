@@ -108,14 +108,17 @@ section {
 
 pre {
     overflow: scroll;
-    background-color: var(--neutral-100);
-    padding: 8px;
+    background-color: var(--neutral-800);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-s);
 }
 
 code {
     font-family: monospace;
-    background-color: var(--neutral-100);
-    padding: 0 8px;
+    background-color: var(--neutral-800);
+    color: var(--accent-400);
+    padding: 2px 8px;
     font-size: var(--type-xxs);
 }
 
