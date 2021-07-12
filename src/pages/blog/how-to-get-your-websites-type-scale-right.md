@@ -1,5 +1,5 @@
 ---
-title: How to get your website's type scale right
+title: How to get your website's type scale right with CSS clamp()
 date: 2021-04-12T14:47:26.288Z
 featuredImage: /assets/optician.jpg
 featuredImageAlt: Eye test
