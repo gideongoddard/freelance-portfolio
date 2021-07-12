@@ -1,5 +1,5 @@
 ---
-title: Using Gatsby & Netlify CMS for non-blog pages
+title: A guide to using Gatsby & Netlify CMS for non-blog pages
 date: 2021-07-10T13:30:31.112Z
 featuredImage: /assets/gatsby-netlify_cms.png
 featuredImageAlt: Gatsby & Netlify CMS logos
