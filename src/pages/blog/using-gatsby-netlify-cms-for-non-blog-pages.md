@@ -4,13 +4,13 @@ date: 2021-07-10T13:30:31.112Z
 featuredImage: /assets/gatsby-netlify_cms.png
 featuredImageAlt: Gatsby & Netlify CMS logos
 ---
-Both Gatsby and Netlify CMS have documentation that covers how to set up Netlify CMS on a Gatsby site for the purposes of creating a blog. You can see these instructions below:
+Both Gatsby and Netlify CMS have documentation that covers how to set up Netlify CMS on a Gatsby site in order to source content for a blog. You can see these instructions below:
 
 [Netlify CMS platform instructions for Gatsby](https://www.netlifycms.org/docs/gatsby/)
 
 [Gatsby instructions for sourcing from Netlify CMS](https://www.gatsbyjs.com/docs/how-to/sourcing-data/sourcing-from-netlify-cms/)
 
-This uses the Netlify CMS **Folder** collection type. What neither Gatsby, nor Netlify CMS docs cover well for beginners is how to source content from Netlify CMS for regular (non-blog) pages using the Netlify CMS **Files** collection type.
+What neither Gatsby, nor Netlify CMS docs cover well for beginners is how to source content from Netlify CMS for regular (non-blog) pages. The key difference is that for blog content, you'd be using the Netlify CMS **Folder** collection type, whereas for regular pages, you'd be using the Netlify CMS **Files** collection type.
 
 Below are the steps for doing so, however they assume that you already have a Gatsby site set up with the `gatsby-source-filesystem` plugin installed and that the site is hosted on Netlify with GitHub CI in place.
 
@@ -89,3 +89,5 @@ The instructions above rely on GitHub for authentication. This means that any co
 3. You'll then want to follow the link for **Settings and usage** and set Registration to invite only.
 4. Staying on the same screen, scroll down to **Services** and enable Git Gateway.
 5. Invite yourself as a user, follow the link in your invitation email and set your password.
+
+You can then repeat step 5 for any other content managers that need CMS access for your site and it's mission accomplished!
