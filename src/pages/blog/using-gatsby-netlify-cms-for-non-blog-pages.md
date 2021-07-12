@@ -10,7 +10,7 @@ Both Gatsby and Netlify CMS have documentation that covers how to set up Netlify
 
 [Gatsby instructions for sourcing from Netlify CMS](https://www.gatsbyjs.com/docs/how-to/sourcing-data/sourcing-from-netlify-cms/)
 
-This uses the Netlify CMS Folder collection type. What neither Gatsby, nor Netlify CMS docs cover well for beginners is how to source content from Netlify CMS for regular (non-blog) pages using the Netlify CMS Files collection type.
+This uses the Netlify CMS **Folder** collection type. What neither Gatsby, nor Netlify CMS docs cover well for beginners is how to source content from Netlify CMS for regular (non-blog) pages using the Netlify CMS **Files** collection type.
 
 Below are the steps for doing so, however they assume that you already have a Gatsby site set up with the `gatsby-source-filesystem` plugin installed and that the site is hosted on Netlify with GitHub CI in place.
 
@@ -74,8 +74,6 @@ Below are the steps for doing so, however they assume that you already have a Ga
 7. Now, to create the content you need to go to `[your-site-url]/admin/` and follow the UI to Pages > Home > Title. Enter your content and publish!
 
 When you publish, it will push an update to your repo which will in turn trigger a deploy on Netlify to make the update.
-
-
 
 ## Using Git Gateway authentication
 
