@@ -35,6 +35,7 @@ export default function Header() {
                     <Link activeStyle={{color: "var(--primary-700)"}} to="/services/">Services</Link>
                     <Link activeStyle={{color: "var(--primary-700)"}} to="/projects/">Projects</Link>
                     <Link activeStyle={{color: "var(--primary-700)"}} to="/about/">About</Link>
+                    <Link activeStyle={{color: "var(--primary-700)"}} to="/blog/">Blog</Link>
                     <Link activeStyle={{color: "var(--primary-700)"}} to="/hire-me/">Hire me</Link>
                 </nav>
             </div>
