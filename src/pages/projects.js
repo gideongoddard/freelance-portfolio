@@ -55,6 +55,13 @@ export default function Projects() {
                 <StaticQuery
                         query={graphql`
                             query {
+                                perfectionValet: file(relativePath: {eq: "images/perfectionvalet.png"}) {
+                                    childImageSharp {
+                                        fluid(maxWidth: 810, quality: 72) {
+                                            ...GatsbyImageSharpFluid
+                                        }
+                                    }
+                                }
                                 paulaAbbey: file(relativePath: {eq: "images/paula-abbey.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 810, quality: 72) {
@@ -87,6 +94,15 @@ export default function Projects() {
                         `}
                         render={data => (
                             <>
+                            <Project
+                                name="Perfection Valet"
+                                href="https://www.perfectiondetailing.co.uk"
+                                imgSrc={data.perfectionValet.childImageSharp.fluid}
+                                imgAlt="Perfection Valet website"
+                            >
+                                <p>As someone with a love for cars, I wanted to work with Richard at Perfection Valet becuase his portfolio of some of the most significant cars on the planet is unrivalled.</p>
+                                <p>Ths project was to modernise a 15 year old, non-responsive holding page to create something that can set the tone for building out a full site in future that showcases Perfection Valet's portfolio and services.</p>
+                            </Project>
                             <Project
                                 name="Paula Abbey Counselling & Psychotherapy"
                                 href="https://paulaabbey.co.uk"

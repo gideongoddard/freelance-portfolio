@@ -33,7 +33,7 @@ export default function ProjectSummary() {
                     <StaticQuery
                         query={graphql`
                             query {
-                                kibworthOsteopaths: file(relativePath: {eq: "images/kibworthosteopaths.png"}) {
+                                perfectionValet: file(relativePath: {eq: "images/perfectionvalet.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 900, quality: 72) {
                                             ...GatsbyImageSharpFluid
@@ -59,16 +59,16 @@ export default function ProjectSummary() {
                         render={data => (
                             <>
                             <Project
+                                name="Perfection Valet"
+                                href="https://www.perfectiondetailing.co.uk"
+                                imgSrc={data.perfectionValet.childImageSharp.fluid}
+                                imgAlt="Perfection Valet website"
+                            />
+                            <Project
                                 name="Paula Abbey Counselling & Psychotherapy"
                                 href="https://paulaabbey.co.uk"
                                 imgSrc={data.paulaabbey.childImageSharp.fluid}
                                 imgAlt="Paula Abbey Counselling & Psychotherapy website"
-                            />
-                            <Project
-                                name="Kibworth Osteopaths & Pilates"
-                                href="https://kibworthosteopaths.co.uk"
-                                imgSrc={data.kibworthOsteopaths.childImageSharp.fluid}
-                                imgAlt="Kibworth Osteopaths & Pilates website"
                             />
                             <Project
                                 name="Caplin Solar"
