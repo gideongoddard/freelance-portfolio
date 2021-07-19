@@ -10,8 +10,9 @@ function Testimonial(props) {
                 <div className={TestimonialStyles.quote}>
                     {props.children}
                 </div>
-                <div className={TestimonialStyles.client}>
-                    <p>- {props.client}</p>
+                <div className={TestimonialStyles.referrer}>
+                    <p className={TestimonialStyles.client}>{props.client}</p>
+                    <p className={TestimonialStyles.business}>{props.business}</p>
                 </div>
             </div>
         </section>
@@ -21,6 +22,7 @@ function Testimonial(props) {
 Testimonial.propTypes = {
     children: PropTypes.any.isRequired,
     client: PropTypes.string.isRequired,
+    business: PropTypes.string.isRequired,
 }
 
 export default Testimonial

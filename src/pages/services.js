@@ -73,7 +73,7 @@ export default function Services() {
                     </Service>
                 </div>
             </section>
-            <Testimonial client="Paula Abbey, Paula Abbey Counselling & Psychotherapy">
+            <Testimonial client="Paula Abbey" business="Paula Abbey Counselling & Psychotherapy">
                 <p>Gideon took the time to find out exactly what it was that I was looking for, even though I was often unsure myself! Throughout the process, I have been involved and kept well informed of progress.</p>
                 <p>Gideon is incredibly patient and makes it easy for me to ask ‘stupid’ questions. I would recommend Gideon’s services to anyone, especially those who are somewhat of a technophobe!</p>
             </Testimonial>
