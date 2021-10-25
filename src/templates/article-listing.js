@@ -23,7 +23,7 @@ export default class Blog extends React.Component {
                     <h1>Blog</h1>
                     <h2>Insights, tips, advice and the occasional musing.</h2>
                 </Title>
-                <section className={ListingStyles.section}>
+                <section>
                     <div className={ListingStyles.container}>
                         {articles.map(({ node }) => (
                             <Card
