@@ -33,21 +33,21 @@ export default function ProjectSummary() {
                     <StaticQuery
                         query={graphql`
                             query {
-                                perfectionValet: file(relativePath: {eq: "images/perfectionvalet.png"}) {
+                                perfectionValet: file(relativePath: {eq: "images/projects/perfectionvalet.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 900, quality: 72) {
                                             ...GatsbyImageSharpFluid
                                         }
                                     }
                                 }
-                                caplinSolar: file(relativePath: {eq: "images/caplinsolar.png"}) {
+                                caplinSolar: file(relativePath: {eq: "images/projects/caplinsolar.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 900, quality: 72) {
                                             ...GatsbyImageSharpFluid
                                         }
                                     }
                                 }
-                                paulaabbey: file(relativePath: {eq: "images/paula-abbey.png"}) {
+                                paulaabbey: file(relativePath: {eq: "images/projects/paula-abbey.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 900, quality: 72) {
                                             ...GatsbyImageSharpFluid
