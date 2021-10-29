@@ -1,0 +1,82 @@
+.main {
+    height: calc(100vh - 165px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer {
+    width: min(90%, 1200px);
+    box-shadow: var(--shadow-l);
+}
+
+.imgContainer, .imgContainer img {
+    max-height: 70vh;
+}
+
+.imgContainer img {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1000ms;
+    animation-name: fade;
+    animation-duration: 1000ms;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1}
+}
+
+.iconContainer {
+    width: min(90%, 1200px);
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin-top: -28px;
+}
+
+.leftIcon, .rightIcon {
+    cursor: pointer;
+    color: hsla(0, 0%, 100%, .8);
+    transition: 500ms;
+}
+
+.leftIcon:hover, .rightIcon:hover {
+    color: white;
+    transition: 100ms;
+}
+
+.leftIcon {
+    grid-column-start: 1;
+}
+
+.rightIcon {
+    grid-column-start: 2;
+    justify-self: right;
+}
+
+@media only screen and (min-width: 600px) {
+    .main {
+        height: calc(100vh - 155px);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .iconContainer {
+        padding: 0 24px;
+    }
+
+    .leftIcon, .rightIcon {
+        font-size: 48px;
+    }
+}
