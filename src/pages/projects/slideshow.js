@@ -31,8 +31,8 @@ function Gallery({ data }) {
         <Layout>
             <div className={SlideshowStyles.main}>
                 <div className={SlideshowStyles.iconContainer}>
-                    {index > 0 && <FontAwesomeIcon style={{fontSize: "var(--type-xl)"}} className={SlideshowStyles.leftIcon} icon={faChevronCircleLeft} onClick={() => handlePreviousClick()} />}
-                    {index < images.length - 1 && <FontAwesomeIcon style={{fontSize: "var(--type-xl)"}} className={SlideshowStyles.rightIcon} icon={faChevronCircleRight} onClick={() => handleNextClick()} />}
+                    {index > 0 && <FontAwesomeIcon style={{fontSize: "var(--type-xl)"}} className={SlideshowStyles.leftIcon} icon={faChevronCircleLeft} onClick={handlePreviousClick} />}
+                    {index < images.length - 1 && <FontAwesomeIcon style={{fontSize: "var(--type-xl)"}} className={SlideshowStyles.rightIcon} icon={faChevronCircleRight} onClick={handleNextClick} />}
                 </div>
                 <div className={SlideshowStyles.imgContainer}>
                     <Img fluid={currentImage.path} alt={currentImage.alt} />
