@@ -1,0 +1,44 @@
+.wrapper {
+    min-height: 95vh;
+    background-color: var(--neutral-800);
+}
+
+.container {
+    color: var(--neutral-100);
+    width: min(90%, 1000px);
+    margin: auto;
+}
+
+.container h1 {
+    max-width: 500px;
+    color: var(--primary-00);
+}
+
+.container h2, .container h3 {
+    color: var(--primary-300);
+}
+
+.container a {
+    color: var(--accent-400);
+}
+
+.container code {
+    background-color: var(--neutral-600);
+}
+
+.flexContainer {
+    padding: 1.5vw;
+    background-color: var(--neutral-700);
+    display: flex;
+}
+
+.flexItem {
+    padding: 1.5vw;
+    margin: 8px;
+    background-color: var(--neutral-100);
+    color: var(--neutral-800);
+}
+
+.flexItem h4 {
+    font-size: var(--type-s);
+}

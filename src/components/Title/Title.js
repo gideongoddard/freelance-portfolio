@@ -9,9 +9,9 @@ function Title(props) {
             <div className={TitleStyles.container}>
                 {props.children}
                 {
-                    props.button ? (
+                    props.button && (
                         <Button type={props.buttonType} colour={props.buttonColour} to={props.buttonTo}>{props.buttonText}</Button>
-                    ) : <></>
+                    )
                 }
             </div>
         </section>
