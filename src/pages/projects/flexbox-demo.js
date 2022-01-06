@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import Layout from "../../components/Layout/Layout"
 import * as FlexboxStyles from "./flexbox-demo.module.css"
 
 function FlexContainer({ children, style }) {
@@ -22,7 +21,7 @@ function FlexItem({ num, children, style }) {
 
 function Flexbox() {
     return (
-        <Layout>
+        <>
             <Helmet>
                 <title>Flexbox Demo | Gideon Goddard Digital</title>
             </Helmet>
@@ -115,7 +114,7 @@ function Flexbox() {
                     </section>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
 
