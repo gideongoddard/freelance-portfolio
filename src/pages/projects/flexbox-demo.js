@@ -115,12 +115,17 @@ function Flexbox() {
                         <p>The final flexbox property that can be applied at the level of the flex item rather than the flex container, is 'order', which allows us to alter the order in which items are displayed within the flex container.</p>
                         <ul>
                             <li>Flex item 1: <code>order: 2;</code></li>
+                            <li>Flex item 2: <code>order: 1;</code></li>
+                            <li>Flex item 3: <code>order: 3;</code></li>
                         </ul>
                         <FlexContainer>
                             <FlexItem num={1} style={{order: 2}}>
                                 <p>Lorem ipsum.</p>
                             </FlexItem>
-                            <FlexItem num={2}>
+                            <FlexItem num={2} style={{order: 1}}>
+                                <p>Lorem ipsum.</p>
+                            </FlexItem>
+                            <FlexItem num={3} style={{order: 3}}>
                                 <p>Lorem ipsum.</p>
                             </FlexItem>
                         </FlexContainer>
