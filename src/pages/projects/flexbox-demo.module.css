@@ -28,6 +28,7 @@
 
 .flexContainer {
     padding: 1.5vw;
+    margin: 1rem auto 2rem auto;
     background-color: var(--neutral-700);
     display: flex;
 }

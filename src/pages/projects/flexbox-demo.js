@@ -14,7 +14,7 @@ function FlexItem({ num, children, style }) {
     return (
         <div className={FlexboxStyles.flexItem} style={style}>
             <h4>Flex item {num}</h4>
-            {children}
+            {children ? children : <p>Lorem ipsum.</p>}
         </div>
     )
 }
@@ -51,9 +51,7 @@ function Flexbox() {
                             <li><code>align-self: auto;</code></li>
                         </ul>
                         <FlexContainer>
-                            <FlexItem num={1}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
+                            <FlexItem num={1} />
                             <FlexItem num={2}>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </FlexItem>
@@ -65,9 +63,7 @@ function Flexbox() {
                             <li>Flex item 2: <code>flex-grow: 1;</code></li>
                         </ul>
                         <FlexContainer>
-                            <FlexItem num={1} style={{flexGrow: 1}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
+                            <FlexItem num={1} style={{flexGrow: 1}} />
                             <FlexItem num={2} style={{flexGrow: 1}}>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </FlexItem>
@@ -78,9 +74,7 @@ function Flexbox() {
                             <li>Flex item 2: <code>flex-grow: 3;</code></li>
                         </ul>
                         <FlexContainer>
-                            <FlexItem num={1} style={{flexGrow: 1}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
+                            <FlexItem num={1} style={{flexGrow: 1}} />
                             <FlexItem num={2} style={{flexGrow: 3}}>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </FlexItem>
@@ -108,15 +102,9 @@ function Flexbox() {
                             <li>Flex item 3: <code>flex-basis: 175px;</code></li>
                         </ul>
                         <FlexContainer>
-                            <FlexItem num={1} style={{flexBasis: 0}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
-                            <FlexItem num={2} style={{flexBasis: '30%'}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
-                            <FlexItem num={3} style={{flexBasis: 175}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
+                            <FlexItem num={1} style={{flexBasis: 0}} />
+                            <FlexItem num={2} style={{flexBasis: '30%'}} />
+                            <FlexItem num={3} style={{flexBasis: 175}} />
                         </FlexContainer>
                         <h3>align-self</h3>
                         <p>So this example introduces something slightly different - a flex container with a height that's greater than the height of the flex items. This brings about the possibility of aligning flex items in a specific way that takes precedence over any alignment set for flex containers. So here's what's going on here...</p>
@@ -127,18 +115,10 @@ function Flexbox() {
                             <li>Flex item 4: <code>align-self: stretch;</code></li>
                         </ul>
                         <FlexContainer style={{height: 350}}>
-                            <FlexItem num={1} style={{alignSelf: 'flex-start'}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
-                            <FlexItem num={2} style={{alignSelf: 'flex-end'}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
-                            <FlexItem num={3} style={{alignSelf: 'center'}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
-                            <FlexItem num={4} style={{alignSelf: 'stretch'}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
+                            <FlexItem num={1} style={{alignSelf: 'flex-start'}} />
+                            <FlexItem num={2} style={{alignSelf: 'flex-end'}} />
+                            <FlexItem num={3} style={{alignSelf: 'center'}} />
+                            <FlexItem num={4} style={{alignSelf: 'stretch'}} />
                         </FlexContainer>
                         <h3>order</h3>
                         <p>The final flexbox property that can be applied at the level of the flex item rather than the flex container, is 'order', which allows us to alter the order in which items are displayed within the flex container.</p>
@@ -148,15 +128,50 @@ function Flexbox() {
                             <li>Flex item 3: <code>order: 3;</code></li>
                         </ul>
                         <FlexContainer>
-                            <FlexItem num={1} style={{order: 2}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
-                            <FlexItem num={2} style={{order: 1}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
-                            <FlexItem num={3} style={{order: 3}}>
-                                <p>Lorem ipsum.</p>
-                            </FlexItem>
+                            <FlexItem num={1} style={{order: 2}} />
+                            <FlexItem num={2} style={{order: 1}} />
+                            <FlexItem num={3} style={{order: 3}} />
+                        </FlexContainer>
+                    </section>
+                    <section>
+                        <h2>Flex containers.</h2>
+                        <p>This section will now focus on the flexbox properties that can be applied to flex containers - the parent element of flex items.</p>
+                        <h3>Initial (default) values.</h3>
+                        <ul>
+                            <li><code>flex-direction: row;</code></li>
+                            <li><code>flex-wrap: no-wrap;</code></li>
+                            <li><code>justify-content: flex-start;</code></li>
+                            <li><code>align-items: stretch;</code></li>
+                            <li><code>align-content: normal;</code></li>
+                            <li><code>row-gap: 0;</code></li>
+                            <li><code>column-gap: 0;</code></li>
+                        </ul>
+                        <h3>display</h3>
+                        <p>All of the examples shown before have used <code>display: flex;</code> on the flex container, however this isn't the only option for the 'display' property:</p>
+                        <p><code>display: inline-flex;</code></p>
+                        <FlexContainer style={{display: 'inline-flex'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                        </FlexContainer>
+                        <h3>flex-direction</h3>
+                        <p>This property controls the direction of the items within the flex container.</p>
+                        <p><code>flex-direction: row-reverse;</code></p>
+                        <FlexContainer style={{flexDirection: 'row-reverse'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>flex-direction: column;</code></p>
+                        <FlexContainer style={{flexDirection: 'column', minHeight: 'calc(400px + 20vw)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>flex-direction: column-reverse;</code></p>
+                        <FlexContainer style={{flexDirection: 'column-reverse', minHeight: 'calc(400px + 20vw)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
                         </FlexContainer>
                     </section>
                 </div>
