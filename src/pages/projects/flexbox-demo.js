@@ -101,12 +101,20 @@ function Flexbox() {
                             </FlexItem>
                         </FlexContainer>
                         <h3>flex-basis</h3>
-                        <p>This sets the initial size of the flex item. Whilst the initial (default) value is 'auto', this example shows the result if Flex item 1 is assigned <code>flex-basis: 0;</code> and Flex item 2 is assigned <code>flex-basis: 60%;</code>. Both of these items have their initial values for flex-grow and flex-shrink.</p>
+                        <p>This sets the initial size of the flex item, although keep in mind that values for 'flex-grow' and 'flex-shrink' may adjust resulting widths set by these values. Whilst the initial value is 'auto' (as seen in all previous examples), this example shows the three flex items have their sizing set using values of different units:</p>
+                        <ul>
+                            <li>Flex item 1: <code>flex-basis: 0;</code></li>
+                            <li>Flex item 2: <code>flex-basis: 30%</code></li>
+                            <li>Flex item 3: <code>flex-basis: 175px;</code></li>
+                        </ul>
                         <FlexContainer>
                             <FlexItem num={1} style={{flexBasis: 0}}>
                                 <p>Lorem ipsum.</p>
                             </FlexItem>
-                            <FlexItem num={2} style={{flexBasis: '60%'}}>
+                            <FlexItem num={2} style={{flexBasis: '30%'}}>
+                                <p>Lorem ipsum.</p>
+                            </FlexItem>
+                            <FlexItem num={3} style={{flexBasis: 175}}>
                                 <p>Lorem ipsum.</p>
                             </FlexItem>
                         </FlexContainer>
