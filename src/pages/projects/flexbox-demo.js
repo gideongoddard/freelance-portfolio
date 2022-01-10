@@ -42,6 +42,14 @@ function Flexbox() {
                         <h3>Initial (default) values.</h3>
                         <p>In this first example, there are no flexbox properties applied to the flex items, so what you see is the default behaviour based on the container having its display property set to 'flex'.</p>
                         <p>The result is that the flex items display as a row, line up at the start of the conainer, do not grow to fill the container and do not wrap. What you will see is that space is allocated to items based on the content within them.</p>
+                        <p>The initial values for flexbox properties that are applicable to flex items are:</p>
+                        <ul>
+                            <li><code>flex-grow: 0;</code></li>
+                            <li><code>flex-shrink: 1;</code></li>
+                            <li><code>flex-basis: auto;</code></li>
+                            <li><code>order: 0;</code></li>
+                            <li><code>align-self: auto;</code></li>
+                        </ul>
                         <FlexContainer>
                             <FlexItem num={1}>
                                 <p>Lorem ipsum.</p>
