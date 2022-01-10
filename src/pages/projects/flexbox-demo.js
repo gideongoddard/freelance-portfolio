@@ -59,7 +59,11 @@ function Flexbox() {
                             </FlexItem>
                         </FlexContainer>
                         <h3>flex-grow</h3>
-                        <p>Here's what happens when the example above sees the flex items have <code>flex-grow: 1;</code> applied to them. Unlike the initial value for flex-grow (which is the equivalent of '0'), you can see that they now grow to fill the container and that they've both grown at the same rate based on their initial widths.</p>
+                        <p>Unlike the initial value for flex-grow (which is the equivalent of '0'), you can see that the flex items now grow to fill the container and that they've both grown at the same rate based on their initial widths.</p>
+                        <ul>
+                            <li>Flex item 1: <code>flex-grow: 1;</code></li>
+                            <li>Flex item 2: <code>flex-grow: 1;</code></li>
+                        </ul>
                         <FlexContainer>
                             <FlexItem num={1} style={{flexGrow: 1}}>
                                 <p>Lorem ipsum.</p>
@@ -68,7 +72,11 @@ function Flexbox() {
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </FlexItem>
                         </FlexContainer>
-                        <p>Should we want them to grow at different rates, we can apply different values to the 'flex-grow' properties. In this example, Flex item 2 is given <code>flex-grow: 3;</code> and therefore grows at 3x the rate of Flex item 1.</p>
+                        <p>Should we want them to grow at different rates, we can apply different values to the 'flex-grow' properties. Here, Flex item 2 has grown at 3x the rate of Flex item 1.</p>
+                        <ul>
+                            <li>Flex item 1: <code>flex-grow: 1;</code></li>
+                            <li>Flex item 2: <code>flex-grow: 3;</code></li>
+                        </ul>
                         <FlexContainer>
                             <FlexItem num={1} style={{flexGrow: 1}}>
                                 <p>Lorem ipsum.</p>
@@ -78,12 +86,17 @@ function Flexbox() {
                             </FlexItem>
                         </FlexContainer>
                         <h3>flex-shrink</h3>
-                        <p>The flex-shrink property controls how a flex item adjusts to going below their initial size. This first example will move straight into the two flex items having different values for this, because the initial value that will be demonstrated in all previous examples is equivalent to '1'. Here, Flex item 1 is assigned <code>flex-shrink: 0;</code> whilst Flex item 2 is assigned <code>flex-shrink: 3;</code> meaning that Flex item 1 does not shrink at all, while Flex item 3 shrinks at 3x the default rate.</p>
+                        <p>The flex-shrink property controls how a flex item adjusts to going below their initial size. The initial value demonstrated in all previous examples is equivalent to '1', so we've already seen the default behaviour demonstrated. Here, Flex item 1 doesn't shrink at all*, whilst Flex item 2 shrinks at 3x the default rate.</p>
+                        <ul>
+                            <li>Flex item 1: <code>flex-shrink: 0;</code></li>
+                            <li>Flex item 2: <code>flex-shrink: 3;</code></li>
+                        </ul>
+                        <em style={{display: 'block', marginBottom: 10, fontSize: 'var(--type-xxs)', color: 'var(--neutral-200)'}}>* The width of the flex item is tied to the content inside it. As it happens, the font size is responsive and scales down for smaller screen sizes so the flex item also scales down...but because of the font size, not because of the 'flex-shrink' property.</em>
                         <FlexContainer>
-                            <FlexItem num={1} style={{flexGrow: 1, flexShrink: 0}}>
+                            <FlexItem num={1} style={{flexShrink: 0}}>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </FlexItem>
-                            <FlexItem num={2} style={{flexGrow: 1, flexShrink: 3}}>
+                            <FlexItem num={2} style={{flexShrink: 3}}>
                                 <p>Esse veniam nostrud pariatur labore Lorem aliquip.</p>
                             </FlexItem>
                         </FlexContainer>
