@@ -155,6 +155,12 @@ function Flexbox() {
                         </FlexContainer>
                         <h3>flex-direction</h3>
                         <p>This property controls the direction of the items within the flex container.</p>
+                        <p><code>flex-direction: row;</code></p>
+                        <FlexContainer style={{flexDirection: 'row'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
                         <p><code>flex-direction: row-reverse;</code></p>
                         <FlexContainer style={{flexDirection: 'row-reverse'}}>
                             <FlexItem num={1} />
@@ -162,13 +168,89 @@ function Flexbox() {
                             <FlexItem num={3} />
                         </FlexContainer>
                         <p><code>flex-direction: column;</code></p>
-                        <FlexContainer style={{flexDirection: 'column', minHeight: 'calc(400px + 20vw)'}}>
+                        <FlexContainer style={{flexDirection: 'column', minHeight: 'calc(450px + 20vw)'}}>
                             <FlexItem num={1} />
                             <FlexItem num={2} />
                             <FlexItem num={3} />
                         </FlexContainer>
                         <p><code>flex-direction: column-reverse;</code></p>
-                        <FlexContainer style={{flexDirection: 'column-reverse', minHeight: 'calc(400px + 20vw)'}}>
+                        <FlexContainer style={{flexDirection: 'column-reverse', minHeight: 'calc(450px + 20vw)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <h3>flex-wrap</h3>
+                        <p>The 'flex-wrap' property controls whether a flex container's items will try to fit onto one line as is default, or whether they'll wrap onto multiple lines as needed.</p>
+                        <p><code>flex-wrap: no-wrap;</code></p>
+                        <FlexContainer>
+                            <FlexItem num={1}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                            <FlexItem num={2}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                            <FlexItem num={3}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                        </FlexContainer>
+                        <p><code>flex-wrap: wrap;</code></p>
+                        <FlexContainer style={{flexWrap: 'wrap'}}>
+                            <FlexItem num={1}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                            <FlexItem num={2}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                            <FlexItem num={3}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                        </FlexContainer>
+                        <p><code>flex-wrap: wrap-reverse;</code></p>
+                        <FlexContainer style={{flexWrap: 'wrap-reverse'}}>
+                            <FlexItem num={1}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                            <FlexItem num={2}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                            <FlexItem num={3}>
+                                <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
+                            </FlexItem>
+                        </FlexContainer>
+                        <h3>justify-content</h3>
+                        <p>This controls how flex items are distributed across the main axis of the flex container.</p>
+                        <p><code>justify-content: flex-start;</code></p>
+                        <FlexContainer style={{justifyContent: 'flex-start'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>justify-content: flex-end;</code></p>
+                        <FlexContainer style={{justifyContent: 'flex-end'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>justify-content: center;</code></p>
+                        <FlexContainer style={{justifyContent: 'center'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>justify-content: space-between;</code></p>
+                        <FlexContainer style={{justifyContent: 'space-between'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>justify-content: space-around;</code></p>
+                        <FlexContainer style={{justifyContent: 'space-around'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>justify-content: space-evenly;</code></p>
+                        <FlexContainer style={{justifyContent: 'space-evenly'}}>
                             <FlexItem num={1} />
                             <FlexItem num={2} />
                             <FlexItem num={3} />
