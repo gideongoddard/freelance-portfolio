@@ -37,6 +37,29 @@ function Flexbox() {
                         <p>What I want to do is provide a working example of <em>everything</em> that CSS flexbox can do. So what follows is a visual demonstration of the effect of every value option (within reason) of every possible flexbox property. Buckle up!</p>
                     </section>
                     <section>
+                        <h2>Contents.</h2>
+                        <p>Temporary table of contents...</p>
+                        <ul>
+                            <li>Flex items</li>
+                            <ul>
+                                <li>Initial values</li>
+                                <li>flex-grow</li>
+                                <li>flex-shrink</li>
+                                <li>flex-basis</li>
+                                <li>align-self</li>
+                            </ul>
+                            <li>Flex containers</li>
+                            <ul>
+                                <li>Initial values</li>
+                                <li>display</li>
+                                <li>flex-direction</li>
+                                <li>flex-wrap</li>
+                                <li>justify-content</li>
+                                <li>align-items</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
                         <h2>Flex items.</h2>
                         <p>In this section, I'm going to focus on what you can do with the properties that apply to flex items and will ignore adding flexbox properties to flex containers, except of course for adding <code>display: flex;</code> so that we're actually using flexbox at all.</p>
                         <h3>Initial (default) values.</h3>
@@ -255,6 +278,7 @@ function Flexbox() {
                             <FlexItem num={2} />
                             <FlexItem num={3} />
                         </FlexContainer>
+                        <h3>align-items</h3>
                     </section>
                 </div>
             </div>
