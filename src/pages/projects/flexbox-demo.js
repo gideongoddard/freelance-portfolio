@@ -38,31 +38,31 @@ function Flexbox() {
                     </section>
                     <section>
                         <h2>Contents.</h2>
-                        <p>Temporary table of contents...</p>
-                        <ul>
-                            <li>Flex items</li>
+                        <ul className={FlexboxStyles.contents}>
+                            <li><a href="#flex-items">Flex items</a></li>
                             <ul>
-                                <li>Initial values</li>
-                                <li>flex-grow</li>
-                                <li>flex-shrink</li>
-                                <li>flex-basis</li>
-                                <li>align-self</li>
+                                <li><a href="#initial-values">Initial values</a></li>
+                                <li><a href="#flex-grow">flex-grow</a></li>
+                                <li><a href="#flex-shrink">flex-shrink</a></li>
+                                <li><a href="#flex-basis">flex-basis</a></li>
+                                <li><a href="#align-self">align-self</a></li>
+                                <li><a href="#order">order</a></li>
                             </ul>
-                            <li>Flex containers</li>
+                            <li><a href="#flex-containers">Flex containers</a></li>
                             <ul>
-                                <li>Initial values</li>
-                                <li>display</li>
-                                <li>flex-direction</li>
-                                <li>flex-wrap</li>
-                                <li>justify-content</li>
-                                <li>align-items</li>
+                                <li><a href="#initial-container-values">Initial values</a></li>
+                                <li><a href="#display">display</a></li>
+                                <li><a href="#flex-direction">flex-direction</a></li>
+                                <li><a href="#flex-wrap">flex-wrap</a></li>
+                                <li><a href="#justify-content">justify-content</a></li>
+                                <li><a href="#align-items">align-items</a></li>
                             </ul>
                         </ul>
                     </section>
                     <section>
-                        <h2>Flex items.</h2>
+                        <h2 id="flex-items">Flex items.</h2>
                         <p>In this section, I'm going to focus on what you can do with the properties that apply to flex items and will ignore adding flexbox properties to flex containers, except of course for adding <code>display: flex;</code> so that we're actually using flexbox at all.</p>
-                        <h3>Initial (default) values.</h3>
+                        <h3 id="initial-values">Initial (default) values.</h3>
                         <p>In this first example, there are no flexbox properties applied to the flex items, so what you see is the default behaviour based on the container having its display property set to 'flex'.</p>
                         <p>The result is that the flex items display as a row, line up at the start of the conainer, do not grow to fill the container and do not wrap. What you will see is that space is allocated to items based on the content within them.</p>
                         <p>The initial values for flexbox properties that are applicable to flex items are:</p>
@@ -79,7 +79,7 @@ function Flexbox() {
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </FlexItem>
                         </FlexContainer>
-                        <h3>flex-grow</h3>
+                        <h3 id="flex-grow">flex-grow</h3>
                         <p>Unlike the initial value for flex-grow (which is the equivalent of '0'), you can see that the flex items now grow to fill the container and that they've both grown at the same rate based on their initial widths.</p>
                         <ul>
                             <li>Flex item 1: <code>flex-grow: 1;</code></li>
@@ -102,7 +102,7 @@ function Flexbox() {
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </FlexItem>
                         </FlexContainer>
-                        <h3>flex-shrink</h3>
+                        <h3 id="flex-shrink">flex-shrink</h3>
                         <p>The flex-shrink property controls how a flex item adjusts to going below their initial size. The initial value demonstrated in all previous examples is equivalent to '1', so we've already seen the default behaviour demonstrated. Here, Flex item 1 doesn't shrink at all*, whilst Flex item 2 shrinks at 3x the default rate.</p>
                         <ul>
                             <li>Flex item 1: <code>flex-shrink: 0;</code></li>
@@ -117,7 +117,7 @@ function Flexbox() {
                                 <p>Esse veniam nostrud pariatur labore Lorem aliquip.</p>
                             </FlexItem>
                         </FlexContainer>
-                        <h3>flex-basis</h3>
+                        <h3 id="flex-basis">flex-basis</h3>
                         <p>This sets the initial size of the flex item, although keep in mind that values for 'flex-grow' and 'flex-shrink' may adjust resulting widths set by these values. Whilst the initial value is 'auto' (as seen in all previous examples), this example shows the three flex items have their sizing set using values of different units:</p>
                         <ul>
                             <li>Flex item 1: <code>flex-basis: 0;</code></li>
@@ -129,7 +129,7 @@ function Flexbox() {
                             <FlexItem num={2} style={{flexBasis: '30%'}} />
                             <FlexItem num={3} style={{flexBasis: 175}} />
                         </FlexContainer>
-                        <h3>align-self</h3>
+                        <h3 id="align-self">align-self</h3>
                         <p>So this example introduces something slightly different - a flex container with a height that's greater than the height of the flex items. This brings about the possibility of aligning flex items in a specific way that takes precedence over any alignment set for flex containers. So here's what's going on here...</p>
                         <ul>
                             <li>Flex item 1: <code>align-self: flex-start;</code></li>
@@ -143,7 +143,7 @@ function Flexbox() {
                             <FlexItem num={3} style={{alignSelf: 'center'}} />
                             <FlexItem num={4} style={{alignSelf: 'stretch'}} />
                         </FlexContainer>
-                        <h3>order</h3>
+                        <h3 id="order">order</h3>
                         <p>The final flexbox property that can be applied at the level of the flex item rather than the flex container, is 'order', which allows us to alter the order in which items are displayed within the flex container.</p>
                         <ul>
                             <li>Flex item 1: <code>order: 2;</code></li>
@@ -157,9 +157,9 @@ function Flexbox() {
                         </FlexContainer>
                     </section>
                     <section>
-                        <h2>Flex containers.</h2>
+                        <h2 id="flex-containers">Flex containers.</h2>
                         <p>This section will now focus on the flexbox properties that can be applied to flex containers - the parent element of flex items.</p>
-                        <h3>Initial (default) values.</h3>
+                        <h3 id="initial-container-values">Initial (default) values.</h3>
                         <ul>
                             <li><code>flex-direction: row;</code></li>
                             <li><code>flex-wrap: no-wrap;</code></li>
@@ -169,14 +169,14 @@ function Flexbox() {
                             <li><code>row-gap: 0;</code></li>
                             <li><code>column-gap: 0;</code></li>
                         </ul>
-                        <h3>display</h3>
+                        <h3 id="display">display</h3>
                         <p>All of the examples shown before have used <code>display: flex;</code> on the flex container, however this isn't the only option for the 'display' property:</p>
                         <p><code>display: inline-flex;</code></p>
                         <FlexContainer style={{display: 'inline-flex'}}>
                             <FlexItem num={1} />
                             <FlexItem num={2} />
                         </FlexContainer>
-                        <h3>flex-direction</h3>
+                        <h3 id="flex-direction">flex-direction</h3>
                         <p>This property controls the direction of the items within the flex container.</p>
                         <p><code>flex-direction: row;</code></p>
                         <FlexContainer style={{flexDirection: 'row'}}>
@@ -202,7 +202,7 @@ function Flexbox() {
                             <FlexItem num={2} />
                             <FlexItem num={3} />
                         </FlexContainer>
-                        <h3>flex-wrap</h3>
+                        <h3 id="flex-wrap">flex-wrap</h3>
                         <p>The 'flex-wrap' property controls whether a flex container's items will try to fit onto one line as is default, or whether they'll wrap onto multiple lines as needed.</p>
                         <p><code>flex-wrap: no-wrap;</code></p>
                         <FlexContainer>
@@ -240,7 +240,7 @@ function Flexbox() {
                                 <p>Ex ex nisi sint aliqua dolore esse sunt.</p>
                             </FlexItem>
                         </FlexContainer>
-                        <h3>justify-content</h3>
+                        <h3 id="justify-content">justify-content</h3>
                         <p>This controls how flex items are distributed across the main axis of the flex container.</p>
                         <p><code>justify-content: flex-start;</code></p>
                         <FlexContainer style={{justifyContent: 'flex-start'}}>
@@ -278,7 +278,7 @@ function Flexbox() {
                             <FlexItem num={2} />
                             <FlexItem num={3} />
                         </FlexContainer>
-                        <h3>align-items</h3>
+                        <h3 id="align-items">align-items</h3>
                     </section>
                 </div>
             </div>

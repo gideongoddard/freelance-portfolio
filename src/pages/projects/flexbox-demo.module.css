@@ -43,3 +43,22 @@
 .flexItem h4 {
     font-size: var(--type-s);
 }
+
+.contents {
+    background-color: var(--neutral-900);
+    padding: 24px calc(24px + 2vw);
+}
+
+.contents, .contents ul {
+    list-style-type: none;
+}
+
+.contents ul {
+    margin-bottom: 24px;
+    padding-left: 24px;
+}
+
+.contents li {
+    line-height: 2;
+    border-bottom: 1px solid var(--neutral-600);
+}
