@@ -33,6 +33,13 @@
     display: flex;
 }
 
+.caption {
+    padding: 1vw 1.5vw;
+    background-color: var(--neutral-600);
+    margin: -2rem auto 2rem auto;
+    font-style: italic;
+}
+
 .flexItem {
     padding: 1.5vw;
     margin: 8px;

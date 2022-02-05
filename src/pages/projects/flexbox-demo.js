@@ -2,11 +2,14 @@ import * as React from "react"
 import { Helmet } from "react-helmet"
 import * as FlexboxStyles from "./flexbox-demo.module.css"
 
-function FlexContainer({ children, style }) {
+function FlexContainer({ children, style, caption }) {
     return (
-        <div className={FlexboxStyles.flexContainer} style={style}>
-            {children}
-        </div>
+        <>
+            <div className={FlexboxStyles.flexContainer} style={style}>
+                {children}
+            </div>
+            { caption && <div className={FlexboxStyles.caption}>{caption}</div>}
+        </>
     )
 }
 
@@ -23,7 +26,7 @@ function Flexbox() {
     return (
         <>
             <Helmet>
-                <title>Flexbox Demo | Gideon Goddard Digital</title>
+                <title>A Complete Demonstration of Flexbox | Gideon Goddard Digital</title>
             </Helmet>
             <div className={FlexboxStyles.wrapper}>
                 <div className={FlexboxStyles.container}>
@@ -56,6 +59,7 @@ function Flexbox() {
                                 <li><a href="#flex-wrap">flex-wrap</a></li>
                                 <li><a href="#justify-content">justify-content</a></li>
                                 <li><a href="#align-items">align-items</a></li>
+                                <li><a href="#align-content">align-content</a></li>
                             </ul>
                         </ul>
                     </section>
@@ -279,6 +283,102 @@ function Flexbox() {
                             <FlexItem num={3} />
                         </FlexContainer>
                         <h3 id="align-items">align-items</h3>
+                        <p>This controls how flex items are distributed across the cross axis of the flex container.</p>
+                        <p><code>align-items: stretch</code></p>
+                        <FlexContainer style={{alignItems: 'stretch', height: 350}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>align-items: flex-start</code></p>
+                        <FlexContainer style={{alignItems: 'flex-start', height: 350}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>align-items: flex-end</code></p>
+                        <FlexContainer style={{alignItems: 'flex-end', height: 350}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>align-items: center</code></p>
+                        <FlexContainer style={{alignItems: 'center', height: 350}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                        </FlexContainer>
+                        <p><code>align-items: baseline</code></p>
+                        <FlexContainer style={{alignItems: 'baseline', height: 350}} caption="To demonstrate the 'baseline' value, flex items 1 & 3 have had padding added to the top and bottom respectively.">
+                            <FlexItem num={1} style={{paddingTop: 75}} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} style={{paddingBottom: 75}} />
+                        </FlexContainer>
+                        <h3 id="align-content">align-content</h3>
+                        <p>This controls how lines of flex items are distributed across the cross axis when there are multiple lines - e.g. when <code>flex-wrap: wrap</code> has been applied.</p>
+                        <p><code>align-content: flex-start</code></p>
+                        <FlexContainer style={{alignContent: 'flex-start', flexWrap: 'wrap', height: 'calc(500px + 15vh)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                            <FlexItem num={4} />
+                            <FlexItem num={5} />
+                            <FlexItem num={6} />
+                        </FlexContainer>
+                        <p><code>align-content: flex-end</code></p>
+                        <FlexContainer style={{alignContent: 'flex-end', flexWrap: 'wrap', height: 'calc(500px + 15vh)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                            <FlexItem num={4} />
+                            <FlexItem num={5} />
+                            <FlexItem num={6} />
+                        </FlexContainer>
+                        <p><code>align-content: center</code></p>
+                        <FlexContainer style={{alignContent: 'center', flexWrap: 'wrap', height: 'calc(500px + 15vh)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                            <FlexItem num={4} />
+                            <FlexItem num={5} />
+                            <FlexItem num={6} />
+                        </FlexContainer>
+                        <p><code>align-content: space-between</code></p>
+                        <FlexContainer style={{alignContent: 'space-between', flexWrap: 'wrap', height: 'calc(500px + 15vh)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                            <FlexItem num={4} />
+                            <FlexItem num={5} />
+                            <FlexItem num={6} />
+                        </FlexContainer>
+                        <p><code>align-content: space-around</code></p>
+                        <FlexContainer style={{alignContent: 'space-around', flexWrap: 'wrap', height: 'calc(500px + 15vh)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                            <FlexItem num={4} />
+                            <FlexItem num={5} />
+                            <FlexItem num={6} />
+                        </FlexContainer>
+                        <p><code>align-content: space-evenly</code></p>
+                        <FlexContainer style={{alignContent: 'space-evenly', flexWrap: 'wrap', height: 'calc(500px + 15vh)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                            <FlexItem num={4} />
+                            <FlexItem num={5} />
+                            <FlexItem num={6} />
+                        </FlexContainer>
+                        <p><code>align-content: stretch</code></p>
+                        <FlexContainer style={{alignContent: 'stretch', flexWrap: 'wrap', height: 'calc(500px + 15vh)'}}>
+                            <FlexItem num={1} />
+                            <FlexItem num={2} />
+                            <FlexItem num={3} />
+                            <FlexItem num={4} />
+                            <FlexItem num={5} />
+                            <FlexItem num={6} />
+                        </FlexContainer>
                     </section>
                 </div>
             </div>
