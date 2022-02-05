@@ -28,7 +28,8 @@ function Flexbox() {
             <Helmet>
                 <title>A Complete Demonstration of Flexbox | Gideon Goddard Digital</title>
             </Helmet>
-            <div className={FlexboxStyles.wrapper}>
+            <a href="#wrapper" className={FlexboxStyles.up}>^</a>
+            <div id="wrapper" className={FlexboxStyles.wrapper}>
                 <div className={FlexboxStyles.container}>
                     <section>
                         <h1>A complete demonstration of <span className="accent">CSS&nbsp;flexbox</span>.</h1>

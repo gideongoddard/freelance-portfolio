@@ -1,3 +1,18 @@
+.up {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border: 1px solid var(--neutral-100);
+    color: var(--neutral-100);
+    padding: 8px 12px;
+    transition: 300ms;
+}
+
+.up:hover {
+    text-decoration: none;
+    background-color: var(--neutral-600);
+}
+
 .wrapper {
     min-height: 95vh;
     background-color: var(--neutral-800);
