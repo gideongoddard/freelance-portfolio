@@ -2,8 +2,9 @@
     position: fixed;
     bottom: 16px;
     right: 16px;
-    border: 1px solid var(--neutral-100);
-    color: var(--neutral-100);
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    color: hsla(0, 0%, 100%, .5);
+    background-color: hsla(0, 0%, 100%, .1);
     padding: 8px 12px;
     transition: 300ms;
 }
