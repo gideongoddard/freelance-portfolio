@@ -38,4 +38,12 @@ export const projects = [{
     imageAlt: 'Perfection Valet website',
     intro1: 'As someone with a love for cars, I wanted to work with Richard at Perfection Valet becuase his portfolio of some of the most significant cars on the planet is unrivalled.',
     intro2: `The project was to modernise a 15 year old, non-responsive holding page to create something that can set the tone for building out a full site in future that showcases Perfection Valet's portfolio and services.`,
+}, {
+    id: 5,
+    name: 'A Complete Demonstration of CSS Flexbox',
+    url: 'https://gideongoddard.co.uk/projects/flexbox-demo/',
+    imageName: 'flexbox',
+    imageAlt: 'Flexbox Demo page',
+    intro1: `This project is intended as a demonstration of the range of possibilities and behaviours of flexbox. It's not supposed to serve as a guide on learning how to use flexbox - this is more about showing what it does visually.`,
+    intro2: 'The demonstration breaks down the various options of (almost) every property applicable to flex containers and flex items.',
 }]
