@@ -46,4 +46,12 @@ export const projects = [{
     imageAlt: 'Flexbox Demo page',
     intro1: `This project is intended as a demonstration of the range of possibilities and behaviours of flexbox. It's not supposed to serve as a guide on learning how to use flexbox - this is more about showing what it does visually.`,
     intro2: 'The demonstration breaks down the various options of (almost) every property applicable to flex containers and flex items.',
+}, {
+    id: 6,
+    name: 'Dr. C French, Consulting Optometrist',
+    url: 'https://consultingoptometrist.co.uk/',
+    imageName: 'christian-french',
+    imageAlt: 'Consulting Optometrist website',
+    intro1: `First and foremost, this project was about migrating the website for Dr. Christian French's Optometry business to a responsive site so that the content could be properly formatted regardless of the device it was being viewed on.`,
+    intro2: `Having already had some good branding work done, it was a pleasure to apply that to a modern website that can adapt and grow as the business does.`,
 }]
