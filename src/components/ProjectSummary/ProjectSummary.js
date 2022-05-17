@@ -33,7 +33,7 @@ export default function ProjectSummary() {
                     <StaticQuery
                         query={graphql`
                             query {
-                                perfectionValet: file(relativePath: {eq: "images/projects/perfectionvalet.png"}) {
+                                christianFrench: file(relativePath: {eq: "images/projects/christian-french.png"}) {
                                     childImageSharp {
                                         fluid(maxWidth: 900, quality: 72) {
                                             ...GatsbyImageSharpFluid
@@ -59,10 +59,10 @@ export default function ProjectSummary() {
                         render={data => (
                             <>
                             <Project
-                                name="Perfection Valet"
-                                href="https://www.perfectiondetailing.co.uk"
-                                imgSrc={data.perfectionValet.childImageSharp.fluid}
-                                imgAlt="Perfection Valet website"
+                                name="Dr. C French, Consulting Optometrist"
+                                href="https://consultingoptometrist.co.uk/"
+                                imgSrc={data.christianFrench.childImageSharp.fluid}
+                                imgAlt="Consulting Optometrist website"
                             />
                             <Project
                                 name="Paula Abbey Counselling & Psychotherapy"
